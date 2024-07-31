@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- ================== Meta Information ================== -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Karmora e-store">
+<meta name="keywords" content="Shopping, Clothing, Fashion">
+<meta name="author" content="Karmora">
+
+<!-- ================== Tab Information ================== -->
+
+<title>Karmora - Dashboard</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+<!-- ================== CSS ================== -->
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-overrides.css">
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+
+<!-- ================== JavaScript ================== -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/karmora.js"></script>
+
+<!-- ================== Compatibility ================== -->
+
+<link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.default.min.css" rel="stylesheet" />
+<link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.dataviz.min.css" rel="stylesheet" />
+<link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.dataviz.default.min.css" rel="stylesheet" />
+<script src="http://cdn.kendostatic.com/2014.2.716/js/jquery.min.js"></script>
+<script src="http://cdn.kendostatic.com/2014.2.716/js/angular.min.js"></script>
+<script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.all.min.js"></script>
+<!---------=============================== PIE CHART ==================================--------->
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="js/compatibility/ie10.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+  	<script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+    <script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body role="document">
+
+<!-- Pre-Nav -->
+<div class="row row-offset-control pre-nav-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 no-offset">
+      <div class="news" id="slideshow"> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 no-offset">
+      <ul class="login-controls pull-right">
+        <li> <a href="#" data-toggle="modal" data-target="#signupModal"> New to Karmora? <b>SIGNUP</b> </a> </li>
+        <li>or</li>
+        <li> <a href="#" data-toggle="modal" data-target="#loginModal"> <b>LOGIN</b> </a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Pre-Nav --> 
+
+<!-- Header -->
+<div class="row row-offset-control header-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div id="logo"> <a href="#"> <img src="images/logo.png" alt="logo"> </a> </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class="search-socio pull-right">
+        <div class="search">
+          <div class="button"> <span class="fa fa-search"></span> </div>
+          <input type="search" placeholder="Search for Stores" / class="pull-right">
+        </div>
+        <div class="clearfix"></div>
+        <ul class="sociol-media-icons">
+          <li> <a href="#"> <i class="fa fa-twitter fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-facebook fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-google-plus fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-pinterest fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-youtube fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-1x fa-black" id="social-blog"></i> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Header --> 
+<!---profile-nav-----> 
+
+<!-- Navbar -->
+<div class="navigation">
+  <div role="navigation" class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="#" class="navbar-brand"> <span class="visible-xs">Menu</span> </a> </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav nav-hover">
+          <li> <a class="home-ic" href="#"> <i class="fa fa-home"></i> </a> </li>
+          <li> <a href="#"> Make </a> </li>
+          <li> <a href="#"> RAISE </a> </li>
+          <li> <a href="#"> Share </a> </li>
+          <li> <a href="#"> Win </a> </li>
+          <li> <a href="#"> Coupons </a> </li>
+          <li> <a href="#"> Forum </a> </li>
+          <li> <a href="#" class="live-chat"> <img src="images/icons/live_support_icon_03.png"> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Navbar --> 
+
+<!-- Dashboard -->
+<div class="container" id="pay4mypurchase_v2">
+  <div class="row ">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <h1 class="main-heading">Making Money with Karmora is EASY as 1... 2... 3!</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-9 col-centered">
+      <div class="row" id="four-boxes" style="border-bottom:none"> 
+        
+        <!-- four-boxes -->
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <div class="box">
+            <div class="icon">
+              <div class="info min-h-230px">
+                <div class="image">
+                  <div class="img-numbers">1</div>
+                </div>
+                <p>Upgrade to a Webstore Owner and earn 20% commission on every rebate paid to every member that joins from your Webstore.</p>
+              </div>
+            </div>
+            <div class="space"></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+          <div class="box">
+            <div class="icon">
+              <div class="info min-h-230px">
+                <div class="image">
+                  <div class="img-numbers">2</div>
+                </div>
+                <p>Build the largest Community of Shoppers you can.  The bigger your shopping community the more money you can make! It’s really that simple! </p>
+              </div>
+            </div>
+            <div class="space"></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+          <div class="box">
+            <div class="icon">
+              <div class="info min-h-230px">
+                <div class="image">
+                  <div class="img-numbers">3</div>
+                </div>
+                <p>Take advantage of all Karmora Tools and Training available to you as a Webstore Owner including our Forum, Blog and Viral Commercials. </p>
+              </div>
+            </div>
+            <div class="space"></div>
+          </div>
+        </div>
+        <!-- /Boxes de Acoes --> 
+        
+      </div>
+    </div>
+  </div>
+  
+  <!-------/prize-cols---->
+  <div class="row" style=" padding:30px 0; border-bottom:solid 1px #E5E5E5; border-top:solid 1px #E5E5E5;">
+    <h2>Online Shopping is a Billion Dollar Industry</h2></br>
+   
+
+    <h2 class=" h2-20"><img src="images/icons/arrow.png" style="margin-right:20px;"> In 2016 US consumers are forecasted to be spend more than $390 billion online!</h2>
+    <h2 class=" h2-20"><img src="images/icons/arrow.png" style="margin-right:20px;"> By 2018 the annual spend is forecasted to be more than $490 billion!<br>
+    </h2>
+  </div>
+  <div class="row border-bottom" id="side-chart"><h2>By 2018 the annual spend is forecasted to be more than $490 billion!</h2>
+    <div class="col-xs-12 col-sm-5 col-md-6 col-md-offset-1">
+      <div class="row col-xs-offset-1" id="nav-tabs">
+      
+        <div class="col-md-6">
+          <nav class="nav-sidebar">
+            <h3 class="pull-left">Top Prospects </h3>
+            <div class="clearfix"></div>
+            <ul class="nav tabs">
+              <li class="active"><a href="#tab1" data-toggle="tab">Friends, Family &amp; Acquaintances</a></li>
+              <li><a href="#tab2" data-toggle="tab"> Stay at Home &amp; Single Parents</a></li>
+              <li><a href="#tab3" data-toggle="tab"> College Students</a></li>
+              <li><a href="#tab4" data-toggle="tab"> Alumni Assoc. &amp; Fraternities/Sororities</a></li>
+              <li><a href="#tab5" data-toggle="tab"> Youth Sports Teams &amp; Clubs</a></li>
+              <li><a href="#tab6" data-toggle="tab"> High School Sports &amp; Academic Clubs</a></li>
+              <li><a href="#tab7" data-toggle="tab"> Religious Organizations</a></li>
+              <li><a href="#tab8" data-toggle="tab"> Charities &amp; Non Profits</a></li>
+              <li><a href="#tab9" data-toggle="tab"> Small to Midsize Businesses</a></li>
+              <li><a href="#tab10" data-toggle="tab"> Network &amp; Multilevel Marketers</a></li>
+              <li><a href="#tab11" data-toggle="tab"> Coupon Clippers &amp; Bargain Shoppers</a></li>
+              </ul>
+          </nav>
+          <div> </div>
+        </div>
+        <!-- tab content -->
+        <div class="tab-content">
+          <div class="tab-pane active text-style" id="tab1">
+            
+            
+<p><strong>Friends,  Family &amp; Casual Acquaintances</strong> represent the most obvious prospects but  aren&rsquo;t necessarily the most profitable.   We highly recommend signing up everyone you know personally before  someone else does!  You may want to  approach those you know that shop online first.   According to Forrester Research the average family will spend more than  $1,700 a year online.  You probably know  someone who spends more!   </p>
+
+          </div>
+          <div class="tab-pane text-style" id="tab2">
+
+            <p><strong>Stay at Home &amp; Single Parents</strong> –  Every penny counts when you are a parent.   Owning a Webstore is inexpensive and a great source of additional income  that requires minimal effort.  <strong></strong></p>
+<p>&nbsp;</p>
+          </div>
+          <div class="tab-pane text-style" id="tab3">
+
+         <p><strong>College Students </strong>love everything about  Karmora.  1) It&rsquo;s FREE; 2) They  understand how to use social media better than any of us and are typically  great Webstore Owners with huge shopping communities; 3) They love saving  money; and 4) they LOVE winning cash prizes!<strong></strong></p>
+          </div>
+          <div class="tab-pane  text-style" id="tab4">
+<p><strong>Alumni Associations &amp;  Fraternities/Sororities </strong>are great organizations that will understand the  power of social media marketing and how it can not only raise funds for their  organization but can help their brothers and sisters make some extra cash!<strong></strong></p>
+          </div>
+          <div class="tab-pane text-style" id="tab5">
+            <p><strong>Youth Sports &amp; Clubs </strong>are always  raising money.  Our FREE Fundraising  platform makes it easy for each family to encourage their friends and family to  join Karmora and support their team or club.   A single club can represent hundreds of shoppers in your community. </p>
+          </div>
+          <div class="tab-pane text-style" id="tab6">
+            <p><strong>High School Sports &amp; Academic Clubs </strong>are  under more pressure than ever to raise funds to help their programs and parents  are being asked to help.  With a FREE  Fundraising Webstore parents aren&rsquo;t being asked to purchase anything they  aren&rsquo;t already buying.  High School athletic  programs can be extraordinarily profitable.   Large athletic programs can represent thousands of shoppers earning you  commissions! </p>
+          </div>
+          <div class="tab-pane text-style" id="tab7">
+
+<p><strong>Religious Organizations </strong>are prime prospects  because their congregations are amongst the largest and most supportive of all  the Fundraising Organizations considering FREE Fundraising Webstores.</p>
+
+          </div>
+          <div class="tab-pane text-style" id="tab8">
+<p><strong>Charities &amp; Non Profits </strong>can use a  FREE Fundraising Webstore as the perfect complement to everything they are  already doing to raise money for their worthy causes and doesn&rsquo;t require their  donor base to purchase anything they aren&rsquo;t already buying.  <strong></strong></p>
+          </div>
+          <div class="tab-pane text-style" id="tab9">
+
+<p><strong>Small to  Medium Sized Businesses</strong> – Real Estate Firms, Law Offices, Dental Offices,  Physicians, and any other small to midsize business you can think of are  regularly buying office supplies from somewhere regularly.  We recommend loading your community with business  that buy from OfficeMax, Sam&rsquo;s Club, and Office Depot.</p>
+          </div>
+          <div class="tab-pane  text-style" id="tab10">
+<p><strong>Network/Multilevel Marketers </strong>will  immediately understand that Karmora will not compete with their existing  opportunity and will understand the concept immediately.<strong></strong></p>
+          </div>
+          <div class="tab-pane text-style" id="tab11">
+
+<p><strong>Coupon Clippers and Bargain Shoppers </strong>are  perfect candidates and are connected to other bargain shoppers.  They will understand the earning potential of  becoming a Webstore Owner.<strong></strong></p>
+          </div>
+          
+          
+        </div>
+        <!----tab-content-----> 
+      </div>
+    </div>
+    <div class=" col-xs-8 col-sm-6 col-md-4  pull-right" id="four-color">
+    <img src="images/mix/4color-img.png" class="img-responsive">
+      
+     
+    <div class="text a"> Enter # of Shoppers </br> <input type="text" class="number" value="10"> </div>
+        <div class="text b"> Enter Monthly Spend </br> <input type="text" class="number dollor" ></div>
+        <div class="text c"> Enter Average Rebate </br> <input type="text" class="number percent" ></div>
+        <div class="text d"> Monthly Commission </br> <input type="text" class="number dollor" ></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="row" >
+  <div class=" col-md-3 col-centered">
+  <a href="#" id="big-2-btn" style="font-size:20px; padding-top:5px; margin-top:50px; " >
+  I like making money!</br>
+<span style="font-size:14px">
+  Upgrade Me TODAY!</span>
+  
+  </a>
+  
+  </div>
+  	
+  </div>
+</div>
+<!---/side-chart---> 
+
+<!-- .container #pay4mypurchase_v2 --> 
+
+<!-- Footer -->
+<div class="row row-offset-control clear-float footer">
+  <div class="container">
+    <div class="text-center">
+      <ul class="sociol-media-icons">
+        <li> <a href="#"> <i class="fa fa-twitter fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-facebook fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-google-plus fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-pinterest fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-youtube fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-inverse fa-1x"><img src="images/icons/blog-icon.png"></i> </a> </li>
+      </ul>
+    </div>
+    <div class="row row-offset-control">
+      <div class="col-sm-7 col-md-7 col-lg-7 footer-about">
+        <h3>About Karmora</h3>
+        <p> Karmora is the premier Cash Back Website in the World!  With more than 1,500 stores to choose from we pay some of the highest rebates available on the internet.  Karmora is paid an advertising fee for directing traffic to our advertisers and we in turn share it with our Shoppers, Webstore Owners, and Fundraising Organizations.  We empower our members with the ability to have their own cash back Webstore where they can profit from the purchases of other shoppers. </p>
+        <div class="footer-logo"> <a href="#"> <img src="images/footer-logo.png" alt="logo" /> </a> </div>
+      </div>
+      <div class="col-md-5 col-md-5 col-lg-5 latest-from-blog">
+        <h3>Latest Blogs</h3>
+        <div class="blog clear-float">
+          <p class="p-heading"> <img class="pull-left" src="images/mix/thumb.png" alt="thumb" />
+          <div class="description"> You'll Love Alex and Ani – 7% Commission!!!!!!!<br>
+            <span class="posted-on">Posted on:</span> <span class="date">April 10, 2014</span> <a class="read-more" href="#"> Read More </a> </div>
+          </p>
+        </div>
+        <div class="space-10"></div>
+        <div class="blog clear-float">
+          <p class="p-heading"> <img class="pull-left" src="images/mix/thumb.png" alt="thumb" />
+          <div class="description"> You'll Love Alex and Ani – 7% Commission!!!!!!!<br>
+            <span class="posted-on">Posted on:</span> <span class="date">April 10, 2014</span> <a class="read-more" href="#"> Read More </a> </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Footer --> 
+
+<!-- Copyright -->
+<div class="row row-offset-control copyright">
+  <div class="container">
+    <div class="text-center">
+      <ul>
+        <li> <a href="#"> Privacy Policy </a> </li>
+        <li> <a href="#"> Refund Policy </a> </li>
+        <li> <a href="#"> Terms of Use </a> </li>
+        <li> <a href="#"> FAQ </a> </li>
+        <li> <a href="#"> Contact Us </a> </li>
+        <li> <a href="#"> Disclosure Statement </a> </li>
+      </ul>
+      <p>© 2014 Karmora. All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
+<!-- End Copyright --> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

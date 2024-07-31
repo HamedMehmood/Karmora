@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- ================== Meta Information ================== -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Karmora e-store">
+<meta name="keywords" content="Shopping, Clothing, Fashion">
+<meta name="author" content="Karmora">
+
+<!-- ================== Tab Information ================== -->
+
+<title>Karmora - Dashboard</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+<!-- ================== CSS ================== -->
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-overrides.css">
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+
+<!-- ================== JavaScript ================== -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/karmora.js"></script>
+<script type="text/javascript" src="js/table-script.js"></script>
+
+<!-- ================== Compatibility ================== -->
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="js/compatibility/ie10.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+  	<script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+    <script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body role="document">
+
+<!-- Pre-Nav -->
+<div class="row row-offset-control pre-nav-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 no-offset">
+      <div class="news" id="slideshow"> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 no-offset">
+      <ul class="login-controls pull-right">
+        <li> <a href="#" data-toggle="modal" data-target="#signupModal"> New to Karmora? <b>SIGNUP</b> </a> </li>
+        <li>or</li>
+        <li> <a href="#" data-toggle="modal" data-target="#loginModal"> <b>LOGIN</b> </a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Pre-Nav --> 
+
+<!-- Header -->
+<div class="row row-offset-control header-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div id="logo"> <a href="#"> <img src="images/logo.png" alt="logo"> </a> </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class="search-socio pull-right">
+        <div class="search">
+          <div class="button"> <span class="fa fa-search"></span> </div>
+          <input type="search" placeholder="Search for Stores" / class="pull-right">
+        </div>
+        <div class="clearfix"></div>
+        <ul class="sociol-media-icons">
+          <li> <a href="#"> <i class="fa fa-twitter fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-facebook fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-google-plus fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-pinterest fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-youtube fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-1x fa-black" id="social-blog"></i> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Header --> 
+<!---profile-nav-----> 
+
+<!-- Navbar -->
+<div class="navigation">
+  <div role="navigation" class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="#" class="navbar-brand"> <span class="visible-xs">Menu</span> </a> </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav nav-hover">
+          <li> <a class="home-ic" href="#"> <i class="fa fa-home"></i> </a> </li>
+          <li> <a href="#"> Make </a> </li>
+          <li> <a href="#"> RAISE </a> </li>
+          <li> <a href="#"> Share </a> </li>
+          <li> <a href="#"> Win </a> </li>
+          <li> <a href="#"> Coupons </a> </li>
+          <li> <a href="#"> Forum </a> </li>
+          <li> <a href="#" class="live-chat"> <img src="images/icons/live_support_icon_03.png"> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Navbar -->
+<style>
+
+    #hd-header{ background:#000;}
+    #border-box-pink{ border: solid 5px #DF3176;}
+    #deals{ margin-bottom:20px;}
+
+    #hd-header{  margin-bottom:40px; padding:0px;}
+	#tranding-box{   float: right;    padding: 0;}
+
+	.sidebar .dropdown-menu{ width:177px !important; min-width:177px !important; max-width:177px !important; margin-top:-1px;}
+	.tranding-text{ font-weight:bold; margin-bottom:20px; font-size:18px;}
+
+
+</style>
+
+<div class="container ">
+        <div class="row row-offset-control" style="margin-bottom:20px;">
+
+       <div id="tranding-nav">
+        <div id="top-left-sidebar" class="col-sm-3 col-md-2 col-lg-2 hidden-xs  ">
+    <!-- Left Sidebar -->
+    <div class="sidebar hidden-sm">
+                    <ul class="dropdown-menu sidebar-menu"> 
+
+                                    <li class="dropdown-submenu"><a data-target="#signupModal" data-toggle="modal" href="#" tabindex="-1" class="list-icon">My Favorites </a>
+                                        
+                     
+                                        </li><li class="dropdown-submenu"><a href="http://test.karmora.com/store/appliances_and_hardware" tabindex="-1" class="list-icon">Appliances &amp; Hardware</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1400" style="font-size:14px;">Sears</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1657" style="font-size:14px;">Ace Hardware</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/83" style="font-size:14px;">JCPenney</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/325" style="font-size:14px;">WalMart.com</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/appliances_and_hardware">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/babies_and_kids" tabindex="-1" class="list-icon">Babies &amp; Kids</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1400" style="font-size:14px;">Sears</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1650" style="font-size:14px;">The Children's Place</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1682" style="font-size:14px;">OshKosh B'Gosh</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1747" style="font-size:14px;">Chicco</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1651" style="font-size:14px;">Babies R Us&nbsp;</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/babies_and_kids">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/books_and_magazines" tabindex="-1" class="list-icon">Books &amp; Magazines</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/638" style="font-size:14px;">Barnes&amp;Noble.com</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/975" style="font-size:14px;">DiscountMags.com</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1413" style="font-size:14px;">Reader's Digest Store</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1663" style="font-size:14px;">BooksAMillion</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1733" style="font-size:14px;">eBooks.com</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/books_and_magazines">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/cellular" tabindex="-1" class="list-icon">Cellular</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/766" style="font-size:14px;">Verizon Wireless</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1667" style="font-size:14px;">Sprint</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1686" style="font-size:14px;">T-Mobile</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1714" style="font-size:14px;">Boost Mobile</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/cellular">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/clothing" tabindex="-1" class="list-icon">Clothing</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/17" style="font-size:14px;">Kohl's</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1647" style="font-size:14px;">NORDSTROM.com</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1700" style="font-size:14px;">Gap</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/clothing">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/computer_and_office" tabindex="-1" class="list-icon">Computer &amp; Office</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1092" style="font-size:14px;">Microsoft Store</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1307" style="font-size:14px;">OfficeMax</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1831" style="font-size:14px;">Staples</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/72" style="font-size:14px;">Office Depot</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/computer_and_office">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/department_stores" tabindex="-1" class="list-icon">Department Stores</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1647" style="font-size:14px;">NORDSTROM.com</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/286" style="font-size:14px;">Target.com</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/325" style="font-size:14px;">WalMart.com</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/department_stores">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/_electronics" tabindex="-1" class="list-icon">Electronics</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/390" style="font-size:14px;">Sharper Image</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1452" style="font-size:14px;">Panasonic</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1492" style="font-size:14px;">Sam's Club</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1400" style="font-size:14px;">Sears</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/_electronics">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/flowers_and_gifts" tabindex="-1" class="list-icon">Flowers &amp; Gifts</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/407" style="font-size:14px;">Shari's Berries</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1003" style="font-size:14px;">Cheryl's</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/228" style="font-size:14px;">Things Remembered</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1027" style="font-size:14px;">FTD.com</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/flowers_and_gifts">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/food_and_wine" tabindex="-1" class="list-icon">Food &amp; Wine</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1323" style="font-size:14px;">Omaha Steaks</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1492" style="font-size:14px;">Sam's Club</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1197" style="font-size:14px;">wine.com</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1348" style="font-size:14px;">WineTasting</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1475" style="font-size:14px;">Pittman &amp; Davis</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/food_and_wine">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/games_and_toys" tabindex="-1" class="list-icon">Games &amp; Toys</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/792" style="font-size:14px;">Sesame Street</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1674" style="font-size:14px;">LEGO</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1828" style="font-size:14px;">Toys R Us</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/325" style="font-size:14px;">WalMart.com</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/games_and_toys">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/health-and-beauty" tabindex="-1" class="list-icon">Health &amp; Beauty</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/414" style="font-size:14px;">Sally Beauty Supply</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/166" style="font-size:14px;">Walgreens</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/119" style="font-size:14px;">Avon</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1687" style="font-size:14px;">Sephora.com, Inc.</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1013" style="font-size:14px;">Drugstore.com</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/health-and-beauty">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/home_and_garden" tabindex="-1" class="list-icon">Home &amp; Garden</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/17" style="font-size:14px;">Kohl's</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1492" style="font-size:14px;">Sam's Club</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/120" style="font-size:14px;">Overstock.com</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/286" style="font-size:14px;">Target.com</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/325" style="font-size:14px;">WalMart.com</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/home_and_garden">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/jewelry" tabindex="-1" class="list-icon">Jewelry</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/721" style="font-size:14px;">Kay Jewelers</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1484" style="font-size:14px;">Reeds Jewelers</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1067" style="font-size:14px;">Gordon's Jewelers</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/jewelry">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/music_and_movies" tabindex="-1" class="list-icon">Music &amp; Movies</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/537" style="font-size:14px;">DVD Planet</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/638" style="font-size:14px;">Barnes&amp;Noble.com</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/612" style="font-size:14px;">Apple iTunes</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1775" style="font-size:14px;">Rhapsody Music Service</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/music_and_movies">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/shoes_and_accessories" tabindex="-1" class="list-icon">Shoes &amp; Accessories</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1134" style="font-size:14px;">Steve Madden</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1425" style="font-size:14px;">Naturalizer</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/15" style="font-size:14px;">TOMS Shoes</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1647" style="font-size:14px;">NORDSTROM.com</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1669" style="font-size:14px;">forever21</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/shoes_and_accessories">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/sports_and_outdoors" tabindex="-1" class="list-icon">Sports &amp; Outdoors</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1326" style="font-size:14px;">Online Sports</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/871" style="font-size:14px;">The Sports Authority</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1407" style="font-size:14px;">Worldwide Golf Shops</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1214" style="font-size:14px;">Camping World</a></li>
+                                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/1653" style="font-size:14px;">Bass Pro</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/sports_and_outdoors">View All</a></li>
+                        </ul>
+                    </li>
+                                        <li class="dropdown-submenu"><a href="http://test.karmora.com/store/travel_and_vacation" tabindex="-1" class="list-icon">Travel &amp; Vacation</a>
+                        <ul style="font-size:14px" class="dropdown-menu">
+                                                                        <li style="font-size:14px !important;"><a class="list-icon" href="http://test.karmora.com/store-detail/13" style="font-size:14px;">Orbitz</a></li>
+                                            
+                            <li><a class="list-icon" href="http://test.karmora.com/store/travel_and_vacation">View All</a></li>
+                        </ul>
+                    </li>
+                                    <li class="dropdown-submenu"><a href="http://test.karmora.com/store/all" tabindex="-1" class="list-icon">View all Stores</a>
+            </li></ul>
+                </div>
+</div>        </div>
+        <div id="tranding-box" class="col-xs-12 col-sm-12 col-md-10 ">
+    
+        <div id="hd-header" class="col-md-12"> <img class="img-responsive col-centered" src="http://test.karmora.com/public/images/categories/Women_132.jpg">
+            <div class="row "> </div>
+        </div>   
+    
+        <div class="col-md-11 col-centered">
+            <p>
+                                
+                <span class="tranding-text">
+                    </span></p><h4 style="text-align: left; line-height: 30px;">Welcome to what’s trending on Karmora for women.&nbsp; This is your one stop shop for what we believe are the top cash back offers on the season’s hottest apparel and accessories.&nbsp; You’ll find some name brands you know and love, alongside some small to mid-size retailers that you may never have heard of, but we feel you may be pleasantly surprised with their merchandise.</h4>                
+                
+            <p></p>
+        </div>
+          <div class="clearfix"></div>
+                  <br><br>
+    
+    <div style="margin-top:-9px;" id="deals" class="col-md-12">
+        
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2059">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/Alex_and_Ani_2059.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+Alex+and+Ani&amp;p[summary]=Trending+on+Karmora+-+Alex+and+Ani&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2059&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FAlex_and_Ani_2059.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2059&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+Alex+and+Ani&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2059&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FAlex_and_Ani_2059.jpg&amp;description=Special+Deals+-+Alex+and+Ani', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2060">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/Bluefly_2060.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+Bluefly&amp;p[summary]=Trending+on+Karmora+-+Bluefly&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2060&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FBluefly_2060.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2060&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+Bluefly&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2060&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FBluefly_2060.jpg&amp;description=Special+Deals+-+Bluefly', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2062">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/Allurez_2062.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+Allurez&amp;p[summary]=Trending+on+Karmora+-+Allurez&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2062&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FAllurez_2062.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2062&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+Allurez&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2062&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FAllurez_2062.jpg&amp;description=Special+Deals+-+Allurez', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+            </div><div style="margin-top: 25px;" id="deals" class="col-md-12">
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2063">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/kohls_2063.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+kohl%27s&amp;p[summary]=Trending+on+Karmora+-+kohl%27s&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2063&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2Fkohls_2063.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2063&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+kohl%27s&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2063&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2Fkohls_2063.jpg&amp;description=Special+Deals+-+kohl%27s', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2064">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/Lucy_Activewear_2064.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+Lucy+Activewear&amp;p[summary]=Trending+on+Karmora+-+Lucy+Activewear&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2064&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FLucy_Activewear_2064.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2064&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+Lucy+Activewear&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2064&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FLucy_Activewear_2064.jpg&amp;description=Special+Deals+-+Lucy+Activewear', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2065">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/Lulus_2065.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+Lulus.com&amp;p[summary]=Trending+on+Karmora+-+Lulus.com&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2065&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FLulus_2065.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2065&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+Lulus.com&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2065&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FLulus_2065.jpg&amp;description=Special+Deals+-+Lulus.com', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+            </div><div style="margin-top: 25px;" id="deals" class="col-md-12">
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2067">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/Neiman_Marcus_2067.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+Neiman+Marcus&amp;p[summary]=Trending+on+Karmora+-+Neiman+Marcus&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2067&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FNeiman_Marcus_2067.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2067&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+Neiman+Marcus&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2067&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FNeiman_Marcus_2067.jpg&amp;description=Special+Deals+-+Neiman+Marcus', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2069">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/Gap_2069.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+Gap&amp;p[summary]=Trending+on+Karmora+-+Gap&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2069&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FGap_2069.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2069&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+Gap&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2069&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FGap_2069.jpg&amp;description=Special+Deals+-+Gap', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2072">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/NORDSTROM_2072.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+NORDSTROM.com&amp;p[summary]=Trending+on+Karmora+-+NORDSTROM.com&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2072&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FNORDSTROM_2072.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2072&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+NORDSTROM.com&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2072&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FNORDSTROM_2072.jpg&amp;description=Special+Deals+-+NORDSTROM.com', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+            </div><div style="margin-top: 25px;" id="deals" class="col-md-12">
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2073">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/Alice_Trixie_2073.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+Alice+%26+Trixie&amp;p[summary]=Trending+on+Karmora+-+Alice+%26+Trixie&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2073&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FAlice_Trixie_2073.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2073&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+Alice+%26+Trixie&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2073&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FAlice_Trixie_2073.jpg&amp;description=Special+Deals+-+Alice+%26+Trixie', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2074">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/Target_2074.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+Target.com&amp;p[summary]=Trending+on+Karmora+-+Target.com&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2074&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FTarget_2074.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2074&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+Target.com&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2074&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FTarget_2074.jpg&amp;description=Special+Deals+-+Target.com', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+                <div id="deal-item" class="col-md-4 col-sm-4 col-xs-6"> 
+            <a target="_blank" href="http://test.karmora.com/store-detail/2071">
+                <img class="img-responsive" src="http://test.karmora.com/public/images/trending_store/Macys_2071.jpg">
+            </a>
+            <div class="socialmediaicons">
+ <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Special+Deals+-+Macy%27s&amp;p[summary]=Trending+on+Karmora+-+Macy%27s&amp;p[url]=http%3A%2F%2Ftest.karmora.com%2Ftrending-store%2F2071&amp;&amp;p[images][0]=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FMacys_2071.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img alt="share on facebook" src="http://test.karmora.com/public/images/share-on-facebook.jpg" class="imgSocialIcon">
+                            </a>
+                            <!--/*CHANGE START HERE SYED TAUSIF 03-18-2014*/-->
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('https://twitter.com/intent/tweet?url=http://test.karmora.com/trending-store/2071&amp;hashtags=TrendingOnKarmora&amp;text=Special+Deals+-+Macy%27s&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/tweeticons.png" alt="tweet" class="imgSocialIcon">
+                            </a>
+
+                            <a href="javascript: void(0)" target="_parent" onclick="window.open('http://www.pinterest.com/pin/create/button/?url=http://test.karmora.com/trending-store/2071&amp;media=http%3A%2F%2Ftest.karmora.com%2Fpublic%2Fimages%2Ftrending_store%2FMacys_2071.jpg&amp;description=Special+Deals+-+Macy%27s', 'sharer', 'toolbar=0,status=0,width=548,height=325');">
+                                <img src="http://test.karmora.com/public/images/pinit_fg_en_rect_gray_20.png" alt="Pin it" class="imgSocialIcon">
+                            </a> 
+                            <!-- Please call pinit.js only once per page --></div>
+        </div>
+            </div><div style="margin-top: 25px;" id="deals" class="col-md-12">
+                
+    </div>
+    <!-------four-boxes----></div>
+    </div>
+    </div>
+<!-- .container #pay4mypurchase_v2 --> 
+
+<!-- Footer -->
+<div class="row row-offset-control clear-float footer">
+  <div class="container">
+    <div class="text-center">
+      <ul class="sociol-media-icons">
+        <li> <a href="#"> <i class="fa fa-twitter fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-facebook fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-google-plus fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-pinterest fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-youtube fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-inverse fa-1x"><img src="images/icons/blog-icon.png"></i> </a> </li>
+      </ul>
+    </div>
+    <div class="row row-offset-control">
+      <div class="col-sm-7 col-md-7 col-lg-7 footer-about">
+        <h3>About Karmora</h3>
+        <p> Karmora is the premier Cash Back Website in the World!  With more than 1,500 stores to choose from we pay some of the highest rebates available on the internet.  Karmora is paid an advertising fee for directing traffic to our advertisers and we in turn share it with our Shoppers, Webstore Owners, and Fundraising Organizations.  We empower our members with the ability to have their own cash back Webstore where they can profit from the purchases of other shoppers. </p>
+        <div class="footer-logo"> <a href="#"> <img src="images/footer-logo.png" alt="logo" /> </a> </div>
+      </div>
+      <div class="col-md-5 col-md-5 col-lg-5 latest-from-blog">
+        <h3>Latest Blogs</h3>
+        <div class="blog clear-float">
+          <p class="p-heading"> <img class="pull-left" src="images/mix/thumb.png" alt="thumb" />
+          <div class="description"> You'll Love Alex and Ani – 7% Commission!!!!!!!<br>
+            <span class="posted-on">Posted on:</span> <span class="date">April 10, 2014</span> <a class="read-more" href="#"> Read More </a> </div>
+          </p>
+        </div>
+        <div class="space-10"></div>
+        <div class="blog clear-float">
+          <p class="p-heading"> <img class="pull-left" src="images/mix/thumb.png" alt="thumb" />
+          <div class="description"> You'll Love Alex and Ani – 7% Commission!!!!!!!<br>
+            <span class="posted-on">Posted on:</span> <span class="date">April 10, 2014</span> <a class="read-more" href="#"> Read More </a> </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Footer --> 
+
+<!-- Copyright -->
+<div class="row row-offset-control copyright">
+  <div class="container">
+    <div class="text-center">
+      <ul>
+        <li> <a href="#"> Privacy Policy </a> </li>
+        <li> <a href="#"> Refund Policy </a> </li>
+        <li> <a href="#"> Terms of Use </a> </li>
+        <li> <a href="#"> FAQ </a> </li>
+        <li> <a href="#"> Contact Us </a> </li>
+        <li> <a href="#"> Disclosure Statement </a> </li>
+      </ul>
+      <p>© 2014 Karmora. All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
+<!-- End Copyright --> 
+
+<!-- ================== Modals ================== -->
+<div class="modal fade" id="funnyroules" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+        <button type="button" class=" close close-popup" data-dismiss="modal" aria-hidden="true"><img src="images/icons/close.png"></button>
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h1>Promotional Terms and Conditions</h1>
+      </div>
+      <div class="mod-footer clear-float">
+        <ul>
+          <li>If you want to keep your treasure you have to a member of Captain Karmora’s crew on the pirate ship Karmora.com.</li>
+          <li>Captain Karmora doesn’t allow any free loading scallywags on his ship.  If you haven’t purchased anything in the past 12 months through Karmora.com your treasure will be marked “pending” and kept in the Captain’s safe.  You will have 30 days from the day you find the treasure to make a purchase through your Webstore.   </li>
+          <li>Captain Karmora is a pirate with a big heart.  All pending treasures in the safe not claimed by a purchase through Karmora.com will be donated to a charity of his choosing. </li>
+          <li>Don’t try to get one over on Captain Karmora, he knows all the secrets to treasure hunting. You can only claim one treasure per day; per person or organization.   </li>
+          <li>If Captain Karmora, in his sole discretion,  catches you trying to steal more treasure than you deserve you will be labeled a no good cheating scoundrel and forced to walk the plank.  Captain </li>
+          <li> Karmora can:  </li>
+        </ul>
+        <ol>
+          <li> Cancel the offending account</li>
+          <li> Remove the treasure from the offending eWallet and donate the funds to charity; and/or</li>
+          <li> Remove the treasure from the offending eWallet and recirculate the treasure throughout active Webstores.</li>
+          <li> Open to legal, registered pirates, 18 and over.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Singup -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+        <button type="button" class=" close close-popup" data-dismiss="modal" aria-hidden="true"><img src="images/icons/close.png"></button>
+        <div class="mod-head pull-right">
+          <h4>Already a Member? <a href="#" data-toggle="modal" data-target="#loginModal"> Login </a> </h4>
+        </div>
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h2>Step 1 - <span class="highlight">Join Now. It´s Free !</span></h2>
+      </div>
+      <div class="signup-options">
+        <div class="login-with-facebook"> <i class="fa fa-facebook fa-inverse fa-7x"></i>
+          <h5 class="fb-message">Join with facebook</h5>
+          <label class="option hidden-xs">OR</label>
+        </div>
+        <div class="md-form-bg">
+          <form method="post" action="#">
+            <div class="form-inner">
+              <h3>Please Signup</h3>
+              <div class="form-fields">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <label class="form-lbl">We will not share or sell your information.</label>
+            </div>
+            <a class="btn-submit" href="#"> <i class="fa fa-arrow-right fa-2x"></i> </a>
+          </form>
+        </div>
+      </div>
+      <div class="mod-footer clear-float">
+        <p>By becoming a Karmora Member, I agree to the Karmora <a href="#"> terms and conditions </a> </p>
+        <p>Karmora is the premier cash back Webstore offering top rebates and coupons to more than 1,500+ name brand stores, Whether you are a bargain shopper looking for the best coupons, free shipping codes, promotional codes, deals, and rebates sites; a networker looking to build a community of shoppers where you can earn commissions every day; or a fundraising organization looking for an exciting new way to raise funds for your worthy cause, Karmora is the home for you!</p>
+        <p> <a href="#"> I'd prefer to look around a bit before making a decision to join Karmora </a> </p>
+        <p>© 2015 Karmora, LLC. All rights reserved. <a href="#"> Privacy Policy </a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.modal --> 
+<!-- Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+        <button type="button" class=" close close-popup" data-dismiss="modal" aria-hidden="true"><img src="images/icons/close.png"></button>
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h2>Step 1 - <span class="highlight">Join Now. It´s Free !</span></h2>
+      </div>
+      <div class="signup-options login-options">
+        <div class="md-form-bg">
+          <form method="post" action="#">
+            <div class="form-inner">
+              <h3>Please Signup</h3>
+              <div class="form-fields">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <label class="form-lbl">Refered by a member <a href="#"> Click Here </a> .</label>
+            </div>
+            <a class="btn-submit" href="#"> <span class="start-shopping">Start Shopping</span> </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /.modal -->
+</div>
+</div>
+</div>
+</div>
+<!-- /.modal --> 
+<!-- End Modals --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karmora e-store">
+  <meta name="keywords" content="Shopping, Clothing, Fashion">
+  <meta name="author" content="Karmora">
+  <title>Karmora - Dashboard</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/social-btn.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-overrides.css">
+  <link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/karmora.js"></script>
+  <script type="text/javascript" src="js/compatibility/ie10.js"></script>
+</head>
+
+<body role="document">
+
+  <!-- Pre-Nav -->
+  <div class="row row-offset-control pre-nav-bg">
+    <div class="container">
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 no-offset">
+        <div class="news" id="slideshow">
+          <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i>
+          <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i>
+          <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 no-offset">
+        <ul class="login-controls pull-right">
+          <li>
+            <a href="#" data-toggle="modal" data-target="#signupModal">
+            New to Karmora? <b>SIGNUP</b>
+          </a>
+          </li>
+          <li>or</li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#loginModal">
+              <b>LOGIN</b>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End Pre-Nav -->
+
+  <!-- Header -->
+  <div class="row row-offset-control header-bg">
+    <div class="container">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div id="logo">
+          <a href="#">
+            <img src="images/logo.png" alt="logo">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="search-socio pull-right">
+          <div class="search">
+            <div class="button">
+              <span class="fa fa-search"></span>
+            </div>
+            <input type="search" placeholder="Search for Stores" class="pull-right">
+          </div>
+          <div class="clearfix"></div>
+          <ul class="sociol-media-icons">
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter fa-1x fa-black"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook fa-1x fa-black"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-google-plus fa-1x fa-black"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-pinterest fa-1x fa-black"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-youtube fa-1x fa-black"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-1x fa-black" id="social-blog"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+  <!---profile-nav----->
+
+  <!-- Navbar -->
+  <div class="navigation">
+    <div role="navigation" class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">
+            <span class="visible-xs">Menu</span>
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav nav-hover">
+            <li>
+              <a class="home-ic" href="#">
+                <i class="fa fa-home"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              Make
+            </a>
+            </li>
+            <li>
+              <a href="#">
+              RAISE
+            </a>
+            </li>
+            <li>
+              <a href="#">
+              Share
+            </a>
+            </li>
+            <li>
+              <a href="#">
+              Win
+            </a>
+            </li>
+            <li>
+              <a href="#">
+              Coupons
+            </a>
+            </li>
+            <li>
+              <a href="#">
+              Forum
+            </a>
+            </li>
+            <li>
+              <a href="#" class="live-chat">
+                <img src="images/icons/live_support_icon_03.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Navbar -->
+
+  <!-- Dashboard -->
+  <div class="container" id="submit-page">
+    <div class="row ">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <h1 class="main-heading">Submit</h1>
+        <h2>Submitting your video is as easy as 1...2...3!
+        <!-- row -->      </h2>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="row" id="four-boxes">
+
+      <!-- four-boxes -->
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="box">
+          <div class="icon">
+            <div class="info video">
+
+
+
+            </div>
+          </div>
+          <div class="space"></div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="box">
+          <div class="icon">
+
+            <div class="info">
+              <div class="image">
+                <div class="img-numbers">1</div>
+              </div>
+              <p>Choose YouTube or Instagram then enter the link to your #Pay4MyPurchase video.</p>
+            </div>
+          </div>
+          <div class="space"></div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="box">
+          <div class="icon">
+
+            <div class="info">
+              <div class="image">
+                <div class="img-numbers">2</div>
+              </div>
+              <p>Create a title for your video.</p>
+            </div>
+          </div>
+          <div class="space"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="box">
+          <div class="icon">
+
+            <div class="info">
+              <div class="image">
+                <div class="img-numbers">3</div>
+              </div>
+              <p>Check the box and click ENTER!</p>
+            </div>
+          </div>
+          <div class="space"></div>
+        </div>
+      </div>
+      <!-- /Boxes de Acoes -->
+
+
+
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-6  col-md-offset-3" id="form-area">
+      <div class="videos"><img src="images/mix/video-icons.png"></div>
+            <form class="form-horizontal" action="" method="post">
+          <fieldset><h4>Enter URL to a video</h4>
+
+            <!-- Name input-->
+            <div class="form-group">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <select class="form-control" name="video">
+                      <option value="1">Instagram</option>
+                      <option value="2">Youtube</option>
+
+                    </select>
+                  </div>
+                  <div class="col-md-8">
+                    <input id="name" name="name" type="text" placeholder="http://instagram.com/Pb34ght1" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Message body -->
+            <div class="form-group">
+              <div class="col-md-12">
+                <textarea class="form-control" id="message" name="message" placeholder="Enter a title for  your video. Pick something catchy!" rows="5"></textarea>
+              </div>
+            </div>
+                        <!-- Message body -->
+            <div class="form-group">
+              <div class="col-md-7 col-md-offset-3">
+              <p><input type="checkbox" class="col-xs-1 col-sm-1 col-md-1" id="checkbox-agree">I agree to the <a href="#" data-toggle="modal" data-target="#funnyroules">Ridiculously Funny Rules!</a></p>
+
+              </div>
+            </div>
+
+            <!-- Form actions -->
+            <div class="form-group">
+
+            <a href="#" id="big-btn" data-toggle="modal" data-target="#Enter">Enter</a>
+
+            </div>
+          </fieldset>
+        </form>
+
+
+      </div>
+
+
+    </div>
+
+
+    <!-------four-boxes---->
+  </div>
+  
+  <!-- .container #pay4mypurchase_v2 -->
+
+  <!-- Footer -->
+  <div class="row row-offset-control clear-float footer">
+    <div class="container">
+      <div class="text-center">
+        <ul class="sociol-media-icons">
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter fa-inverse fa-1x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook fa-inverse fa-1x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-google-plus fa-inverse fa-1x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest fa-inverse fa-1x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-youtube fa-inverse fa-1x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-inverse fa-1x"><img src="images/icons/blog-icon.png"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="row row-offset-control">
+        <div class="col-sm-7 col-md-7 col-lg-7 footer-about">
+          <h3>About Karmora</h3>
+          <p>Karmora is the premier Cash Back Website in the World! With more than 1,500 stores to choose from we pay some of the highest rebates available on the internet. Karmora is paid an advertising fee for directing traffic to our advertisers and we
+            in turn share it with our Shoppers, Webstore Owners, and Fundraising Organizations. We empower our members with the ability to have their own cash back Webstore where they can profit from the purchases of other shoppers.</p>
+          <div class="footer-logo">
+            <a href="#">
+              <img src="images/footer-logo.png" alt="logo">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-5 col-md-5 col-lg-5 latest-from-blog">
+          <h3>Latest Blogs</h3>
+          <div class="blog clear-float">
+            <p class="p-heading">
+              <img class="pull-left" src="images/mix/thumb.png" alt="thumb">
+            </p>
+            <div class="description">You'll Love Alex and Ani – 7% Commission!!!!!!!
+              <br>
+              <span class="posted-on">Posted on:</span>
+              <span class="date">April 10, 2014</span>
+              <a class="read-more" href="#">
+              Read More
+            </a>
+            </div>
+            <p></p>
+          </div>
+          <div class="space-10"></div>
+          <div class="blog clear-float">
+            <p class="p-heading">
+              <img class="pull-left" src="images/mix/thumb.png" alt="thumb">
+            </p>
+            <div class="description">You'll Love Alex and Ani – 7% Commission!!!!!!!
+              <br>
+              <span class="posted-on">Posted on:</span>
+              <span class="date">April 10, 2014</span>
+              <a class="read-more" href="#">
+              Read More
+            </a>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <!-- Copyright -->
+  <div class="row row-offset-control copyright">
+    <div class="container">
+      <div class="text-center">
+        <ul>
+          <li>
+            <a href="#">
+            Privacy Policy
+          </a>
+          </li>
+          <li>
+            <a href="#">
+            Refund Policy
+          </a>
+          </li>
+          <li>
+            <a href="#">
+            Terms of Use
+          </a>
+          </li>
+          <li>
+            <a href="#">
+            FAQ
+          </a>
+          </li>
+          <li>
+            <a href="#">
+            Contact Us
+          </a>
+          </li>
+          <li>
+            <a href="#">
+            Disclosure Statement
+          </a>
+          </li>
+        </ul>
+        <p>© 2014 Karmora. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Copyright -->
+
+  <!-- ================== Modals ================== -->
+
+<div class="modal fade" id="funnyroules" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+            <button type="button" class=" close close-popup" data-dismiss="modal" aria-hidden="true"><img src="images/icons/close.png"></button>
+        
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h1>Rules So Easy You’ll Laugh Your Pants Off!</h1>
+        <h2>Promotion Rules and Regurgitation</h2>
+      </div>
+      
+      <div class="mod-footer clear-float">
+        <ul>
+          <li>You must be a Karmora member to participate. Everyone who is anyone is a Karmora member!</li>
+          <li>          Your purchase must have been made through your Karmora webstore. We do not give prize money to people willing to pay full price because they are obviously made of money and don't need it!</li>
+          <li>          Don’t procrastinate! This isn't homework or doing the dishes! The sooner you submit your video the more time you have to gain votes. We will not accept votes or videos after October 31, 2014 at 11:59:59 PM Arizona Time (we never have to change our clocks... how sweet is that!).</li>
+          <li>          If using Instagram, make sure your profile is viewable to the public and/or we are connected. Ya know, you like us, we like you, so we follow each other. We can’t guarantee we won’t comment on all your selfies though!</li>
+          <li>          Only videos containing funny, hilarious, crazy, entertaining, goofy, silly, or otherwise awesome content will be accepted for voting. Once accepted you will receive an email with your very own voting page to send to your peeps so they can hook you up with some righteous votes!</li>
+          <li>          This is a PG Rated video promotion. Videos containing naughty stuff like profanity, nudity, or illegal activity will be viewed, probably laughed at, and then moved to the “X” rated vault and will never see the light of day!</li>
+          <li>          Don’t be a pirate. We cannot use videos with licensed music. If you use licensed music your video will walk the plank and drown in the Karmora Abyss. In land lover terms... your video will be rejected!</li>
+          <li>          Be shameless! Invite everyone you know to vote for your video everyday. The video with the most votes gets the prize. You and your righteous peeps are limited to one vote per IP address per day.</li>
+          <li>          Be even more than shameless and invite your friends to join your Karmora community and receive 10 votes for every person that joins. Who doesn’t like saving money, making money and having fun?</li>
+          <li>          We’re not the Federal Reserve and we can’t print money... yet :) We will pay for your purchase up to $250 regardless of your purchase amount. If you buy a Rolex for $10 Gazillion dollars you will only get a check for $250 from the Bank of Karmora!</li>
+          <li>          We are nice, but not that nice. If you buy a pair of Crocs for $49 you will get a $49 check as your prize. Perhaps you should consider purchasing a pair of Crocs for each of your five Croc-a-Kids and maximize your prize potential! Please don't call us and say what a Croc-of-Poo it is that you only won $49 if you only buy a single pair.</li>
+          <li>          Your purchase amount will be added to your eWallet and will be available for immediate collection.</li>
+          <li> Cheaters Never Win! If you get caught cheating for votes we will disqualify you and chant “cheater, cheater, cheater!”</li>
+          <li>          In the event of a tie, Karmora staff in their unquestionable, undeniable, remarkable, just, fair and sole discretion will determine the winner.</li>
+          <li> Be a horrible winner and brag as much as possible to everyone you know (and don’t know) about winning the promotion and how smart, funny and creative your are. And... after you catch your breath and your arm stops cramping from patting yourself on the back invite hem to join your Karmora Shopping Community!</li>
+          <li> Don’t be a cry baby if you lose. No one likes a cry baby! Besides, this promotion is bound by our mem- bership Terms of Use which strictly prohibits crying. Seriously, we’re not kidding. Well... kinda.</li>
+          <li> Winner will be announced on October 1, 2014.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="modal fade" id="Enter" tabindex="-1" role="dialog" aria-labelledby="EnterModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+            <button type="button" class=" close close-popup" data-dismiss="modal" aria-hidden="true"><img src="images/icons/close.png"></button>
+        
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h1>Success</h1>
+        </div>
+        <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12" style="text-align:center;">
+          <p>Thank you for entering Karmora’s #Pay4MyPurchase video promotion! Please give our team 24 hours to view and approve your video. We will send a confirmation e-mail as soon as this 
+            process is completed.</p>
+          <p>As always, we wish you Good Luck, Good Fortune and Good Karmora!</p>
+        </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Singup -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="row row-offset-control modal-content">
+        <div class="row row-offset-control">
+          <div class="mod-head pull-right">
+            <h4>Already a Member?
+              <a href="#" data-toggle="modal" data-target="#loginModal">
+              Login
+            </a>
+            </h4>
+          </div>
+        </div>
+        <div class="clear-float sn-modal-title">
+          <h2>Step 1 -
+            <span class="highlight">Join Now. It´s Free !</span>
+          </h2>
+        </div>
+        <div class="signup-options">
+          <div class="login-with-facebook">
+            <i class="fa fa-facebook fa-inverse fa-7x"></i>
+            <h5 class="fb-message">Join with facebook</h5>
+            <label class="option hidden-xs">OR</label>
+          </div>
+          <div class="md-form-bg">
+            <form method="post" action="#">
+              <div class="form-inner">
+                <h3>Please Signup</h3>
+                <div class="form-fields">
+                  <input type="text" placeholder="Your Name">
+                  <input type="email" placeholder="Your Email">
+                </div>
+                <label class="form-lbl">We will not share or sell your information.</label>
+              </div>
+              <a class="btn-submit" href="#">
+                <i class="fa fa-arrow-right fa-2x"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+        <div class="mod-footer clear-float">
+          <p>By becoming a Karmora Member, I agree to the Karmora
+            <a href="#">
+            terms and conditions
+          </a>
+          </p>
+          <p>Karmora is the premier cash back Webstore offering top rebates and coupons to more than 1,500+ name brand stores, Whether you are a bargain shopper looking for the best coupons, free shipping codes, promotional codes, deals, and rebates sites;
+            a networker looking to build a community of shoppers where you can earn commissions every day; or a fundraising organization looking for an exciting new way to raise funds for your worthy cause, Karmora is the home for you!</p>
+          <p>
+            <a href="#">
+            I'd prefer to look around a bit before making a decision to join Karmora
+          </a>
+          </p>
+          <p>© 2015 Karmora, LLC. All rights reserved.
+            <a href="#">
+            Privacy Policy
+          </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal -->
+  <!-- Login -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="row row-offset-control modal-content">
+        <div class="row row-offset-control">
+          <div class="mod-head pull-right">
+            <h4>Already a Member?
+              <a href="#">
+              Login
+            </a>
+            </h4>
+          </div>
+        </div>
+        <div class="clear-float sn-modal-title">
+          <h2>Step 1 -
+            <span class="highlight">Join Now. It´s Free !</span>
+          </h2>
+        </div>
+        <div class="signup-options login-options">
+          <div class="md-form-bg">
+            <form method="post" action="#">
+              <div class="form-inner">
+                <h3>Please Signup</h3>
+                <div class="form-fields">
+                  <input type="text" placeholder="Your Name">
+                  <input type="email" placeholder="Your Email">
+                </div>
+                <label class="form-lbl">Refered by a member
+                  <a href="#">
+                  Click Here
+                </a>
+                  .
+                </label>
+              </div>
+              <a class="btn-submit" href="#">
+                <span class="start-shopping">Start Shopping</span>
+              </a>
+            </form>
+          </div>
+        </div>
+        <div class="mod-footer clear-float">
+          <p>By becoming a Karmora Member, I agree to the Karmora
+            <a href="#">
+            terms and conditions
+          </a>
+          </p>
+          <p>Karmora is the premier cash back Webstore offering top rebates and coupons to more than 1,500+ name brand stores, Whether you are a bargain shopper looking for the best coupons, free shipping codes, promotional codes, deals, and rebates sites;
+            a networker looking to build a community of shoppers where you can earn commissions every day; or a fundraising organization looking for an exciting new way to raise funds for your worthy cause, Karmora is the home for you!</p>
+          <p>
+            <a href="#">
+            I'd prefer to look around a bit before making a decision to join Karmora
+          </a>
+          </p>
+          <p>© 2015 Karmora, LLC. All rights reserved.
+            <a href="#">
+            Privacy Policy
+          </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /.modal -->
+  <!-- End Modals -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>

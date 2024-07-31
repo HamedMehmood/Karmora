@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- ================== Meta Information ================== -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Karmora e-store">
+<meta name="keywords" content="Shopping, Clothing, Fashion">
+<meta name="author" content="Karmora">
+
+<!-- ================== Tab Information ================== -->
+
+<title>Karmora - Dashboard</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+<!-- ================== CSS ================== -->
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-overrides.css">
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+
+<!-- ================== JavaScript ================== -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/karmora.js"></script>
+<script type="text/javascript" src="js/table-script.js"></script>
+
+<!-- ================== Compatibility ================== -->
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="js/compatibility/ie10.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+  	<script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+    <script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body >
+<style>
+#baby-pop{ position:relative;}
+.baby-message{ border:solid 3px #000; border-radius:10px; margin:0 auto;font-size: 14px; margin:20px; margin-top:30px; padding: 20px;}
+
+.baby-from-title{ background:#cc3366; padding:10px; color:#FFF; margin-top:20px;}
+
+
+
+@media screen and (max-width: 650px) {
+#baby-pop{ background:none}
+#baby-form h3{font-size:16px;}
+#baby-form h4{ font-size:14px; text-align:center;}
+.submit-button{ width:100%;}
+
+	
+}
+@media screen and (min-width: 650px){ 
+#baby-pop{ width:635px; margin:0 auto;  background:url(images/mix/baby-bg.jpg) no-repeat center 20px   ; position:relative; height:355px; }
+.baby-message{width: 152px; height: 125px; background: url(images/mix/message-bg.png) no-repeat top center;  position: absolute; top: -20px;
+right: 131px; padding: 25px 10px 14px 13px; font-size: 10px; border: none; } 
+.baby-from-title,
+.oh-baby{ display:none;}
+#baby-form{ width:350px; margin:0 auto; position:absolute; bottom:10px; left:10px; }
+.form-txt{ height:20px;}
+
+
+.form-group{ margin-bottom:0px;}
+#baby-form h3{font-size: 13px; margin: 0px; line-height: 19px;} 
+#baby-form h4{ font-size: 11px; margin: 0px; line-height: 14px; text-align:center; margin:0px;} 
+.control-label{ margin:0px;}
+form{ margin-top:5px;}
+.form-txt{ margin-bottom:0px;}
+.submit-button{ height: 28px !important; font-size: 12px !important; margin: 0px !important; margin-top: 3px !important;}
+}
+
+
+</style>
+<div class="row">
+  <div class="co-xs-12 col-sm-7 col-centered " id="baby-pop">
+    <div class="baby-message">I just made a phat commission on that sweet pair of Crocs you just bought… Say Whaaatttt!</div>
+    <div class="col-xs-12 col-sm-6" id="baby-form-area">
+      <div class="col-xs-6 col-centered oh-baby" > <img src="images/mix/onbaby.png" class="img-responsive" > </div>
+      <div class="row">
+        <div class="col-xs-8 col-centered baby-from-title">Join Karmora… Save Money When You Shop… 
+          Make Money When Others Shop!</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-centered" id="baby-form">
+        <h3> Create your Money Making Webstore for FREE in just seconds! </h3>
+        <h4>No kidding… we really are going to create your Personalized Webstore! </h4>
+        <h4>All we need it…</h4>
+        <div class="clearfix"></div>
+        <div class="col-xs-10 col-centered">
+          <form >
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class=" col-xs-5 control-label" for="textinput">Your Name*</label>
+              <input type="text" name="your-name" class=" col-xs-7 form-txt  " value="" readonly>
+            </div>
+            <div class="clearfix"></div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-xs-5 control-label" for="textinput">Email Address</label>
+              <input type="text" class=" col-xs-7  form-txt" name="email" >
+            </div>
+            <div class="form-group">
+              <button type="submit" class=" col-xs-7 btn btn-default submit-button" style="margin-right:0px;">Create my Webstore</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

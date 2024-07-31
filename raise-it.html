@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- ================== Meta Information ================== -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Karmora e-store">
+<meta name="keywords" content="Shopping, Clothing, Fashion">
+<meta name="author" content="Karmora">
+
+<!-- ================== Tab Information ================== -->
+
+<title>Karmora - Dashboard</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+<!-- ================== CSS ================== -->
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-overrides.css">
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+
+<!-- ================== JavaScript ================== -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/karmora.js"></script>
+
+<!-- ================== Compatibility ================== -->
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="js/compatibility/ie10.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+  	<script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+    <script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body role="document">
+
+<!-- Pre-Nav -->
+<div class="row row-offset-control pre-nav-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 no-offset">
+      <div class="news" id="slideshow">
+        <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i>
+        <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i>
+        <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 no-offset">
+      <ul class="login-controls pull-right">
+        <li>
+          <a href="#" data-toggle="modal" data-target="#signupModal">
+            New to Karmora? <b>SIGNUP</b>
+          </a>
+        </li>
+        <li>or</li>
+        <li>
+          <a href="#" data-toggle="modal" data-target="#loginModal">
+            <b>LOGIN</b>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Pre-Nav -->
+
+<!-- Header -->
+<div class="row row-offset-control header-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div id="logo">
+        <a href="#">
+          <img src="images/logo.png" alt="logo">
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class="search-socio pull-right">
+        <div class="search">
+          <div class="button">
+            <span class="fa fa-search"></span>
+          </div>
+          <input type="search" placeholder="Search for Stores" / class="pull-right">
+        </div>
+        <div class="clearfix"></div>
+        <ul class="sociol-media-icons">
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter fa-1x fa-black"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook fa-1x fa-black"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-google-plus fa-1x fa-black"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest fa-1x fa-black"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-youtube fa-1x fa-black"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-1x fa-black" id="social-blog"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Header -->
+<!---profile-nav----->
+
+<!-- Navbar -->
+<div class="navigation">
+  <div role="navigation" class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">
+          <span class="visible-xs">Menu</span>
+        </a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav nav-hover">
+          <li>
+            <a class="home-ic" href="#">
+              <i class="fa fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Make
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              RAISE
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Share
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Win
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Coupons
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Forum
+            </a>
+          </li>
+          <li>
+            <a href="#" class="live-chat">
+              <img src="images/icons/live_support_icon_03.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container"></div>
+
+<!-- End Navbar -->
+
+<div class="container" id="profile-container">
+  <h1>Rais it</h1>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-centered " id="yt-video">
+      <img src="images/mix/yt-video.png" class="img-responsive">
+    </div>
+    <!---- yt-video ------>
+  </div>
+</div>
+<div class="row" id="slider-bg">
+  <div class=" col-xs-12 col-sm-12 col-md-10 col-centered col-md-offset-1 ">
+    <div class="row">
+      <div class='col-md-12'>
+        <div class="carousel slide media-carousel" id="media">
+          <div class="carousel-inner">
+            <div class="item  active">
+              <div class="row">
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                  <img alt="" src="images/mix/1392402678.jpg" class="img-responsive">
+                </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                  <img alt="" src="images/mix/1392403719.jpg" class="img-responsive">
+                </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                  <img alt="" src="images/mix/1392403756.jpg" class="img-responsive">
+                </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                  <img alt="" src="images/mix/1392403579.jpg" class="img-responsive">
+                </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                  <img alt="" src="images/mix/1392403798.jpg" class="img-responsive">
+                </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                  <img alt="" src="images/mix/1392402678.jpg" class="img-responsive">
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392402678.jpg" class="img-responsive">
+                  </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392403579.jpg" class="img-responsive">
+                  </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392403719.jpg" class="img-responsive">
+                  </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392403756.jpg" class="img-responsive">
+                  </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392403798.jpg" class="img-responsive">
+                  </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392402678.jpg" class="img-responsive">
+                  </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392402678.jpg" class="img-responsive">
+                  </a>
+                  <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392403579.jpg" class="img-responsive">
+                  </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392403719.jpg" class="img-responsive">
+                  </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392403756.jpg" class="img-responsive">
+                  </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392403798.jpg" class="img-responsive">
+                  </a>
+                <a href="#" id="slide-thumb"   class="col-xs-6 col-sm-4 col-md-2 thumbnail" >
+                    <img alt="" src="images/mix/1392402678.jpg" class="img-responsive">
+                  </a>
+              </div>
+            </div>
+          </div>
+          <a data-slide="prev" href="#media" class="left carousel-control">
+            ‹
+          </a>
+          <a data-slide="next" href="#media" class="right carousel-control">
+            ›
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-centered">
+      <h1>JOIN THE KARMORA FUNDRAISING REVOLUTION</h1>
+      <p class="text-center" style="font-size:15px;">Karmora FREE Fundraising Webstores are revolutionizing traditional fundraising.  Supporters get to purchase what they want, from where they want, whenever they want and get cash back on their purchases, while at the same time supporting their favorite teachers, clubs, charities and religious organizations. </p>
+      <div class="number-list">
+        <h4>How it Works:</h4>
+        </br>
+        <ol >
+          <li>Prospective fundraiser fills out the short request form below for review.  The fundraiser must have either a website, Facebook page, and/or an educational email address (.edu) to qualify.  The approval process typically takes between 24-48 hours.</li>
+          <li>Fundraiser receives an approval email with instructions on how to set up their profile to customize their Fundraising Webstore and describe their fundraising goals. <span class="pink-text"> It's really simple.</span></li>
+          <li>Fundraiser invites its support base to join their shopping community for FREE and earn cash back on their purchases using our custom email and social media Share Platform.  Each supporter that joins will receive their very own Webstore.<span class="pink-text"> It's really simple.</span></li>
+          <li>Supporters have <span style=" font-size:20px">4</span> ways to contribute: </li>
+          <ul>
+            <li>They can support the fundraiser by making a donation via <span class="po-markup" >
+              <a href="#" class="po-link">
+                credit or debit card.
+              </a>
+              <div class="po-content hidden">
+                
+                <!-- ./po-title -->
+                
+                <div class="po-body">
+                  <div class="row">
+                    <div class="col-xs-12">popup on the link will read… Not all Karmora fundraisers are tax-exempt under section 501c3 of the Internal Revenue Code.  Please check with your individual tax advisor on how to treat your generous contribution. </div>
+                  </div>
+                </div>
+                <!-- ./po-body -->
+              </div>
+              <!-- ./po-content -->
+              </span>
+            </li>
+            <li>They can make purchases on their personal Webstore and earn cash back on their purchases.  Karmora will contribute to the fundraiser 20% of every dollar earned by every Webstore in the fundraiser's shopping community. </li>
+            <li>They have the option to <span class="po-markup" >
+              <a href="#" class="po-link">
+                gift their cash back
+              </a>
+              <div class="po-content hidden">
+                
+                <!-- ./po-title -->
+                
+                <div class="po-body">
+                  <div class="row">
+                    <div class="col-xs-12">popup on the link will read… Not all Karmora fundraisers are tax-exempt under section 501c3 of the Internal Revenue Code.  Please check with your individual tax advisor on how to treat your generous contribution. </div>
+                  </div>
+                </div>
+                <!-- ./po-body -->
+              </div>
+              <!-- ./po-content -->
+              </span> to the fundraising organization. </li>
+            <li>They can invite others to join the fundraiser's shopping community from their personal webstores.  The more supporters that are shopping… the more money that can be raised!</li>
+          </ul>
+          <li>Fundraiser can manage their campaign and collect funds in the reporting section of their Webstore anytime they choose. </li>
+        </ol>
+      </div>
+      <p><br>
+        <br>
+        Please fill out the short form below to request a FREE Karmora Fundraising Webstore. If you have any questions you can speak to your friendly Karmora Webstore Owner or live chat with one of our Fundraising Experts by 
+        <a onClick="window.open('http://www.karmora.com/liveSupport/', 'sharer', 'toolbar=0,status=0,width=600,height=600');" target="_parent" href="javascript: void(0)">
+          clicking here
+        </a>
+        . </p>
+      <p><br>
+      </p>
+      <p class="text-center" style="font-size:15px;"><strong> You must have an active website or Facebook page to qualify for a Free Fundraising Webstore.</strong></p>
+      <div class="col-sm-10 col-md-10 col-centered">
+        <form id="fundraising-form" action="/admin/fundraising/" method="post">
+          <div class="adminform_row">
+            <label for="FundraisingForm_organization_type" class="required">Organization Type <span class="required">*</span></label>
+            <select name="FundraisingForm[organization_type]" id="FundraisingForm_organization_type">
+              <option value="Individual">Individual/Event</option>
+              <option value="Teacher "> Teacher </option>
+              <option value="non-tax-exempt"> Non Tax-Exempt Entity</option>
+              <option value="tax-exempt Entity"> Tax-Exempt Entity </option>
+            </select>
+            <br>
+            <div class="errorMessage" id="FundraisingForm_organization_type_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <label for="FundraisingForm_name_of_organization" class="required">Tax-Exempt ID Number <span class="required">*</span></label>
+            <input name="FundraisingForm[name_of_organization]" id="FundraisingForm_name_of_organization" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_name_of_organization_em_" style="display:none"></div>
+          </div>
+          <div class="adminform_row">
+            <label for="FundraisingForm_name_of_organization" class="required">Name of Fundraiser <span class="required">*</span></label>
+            <input name="FundraisingForm[name_of_organization]" id="FundraisingForm_name_of_organization" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_name_of_organization_em_" style="display:none"></div>
+          </div>
+          <div class="adminform_row">
+            <label for="FundraisingForm_name_of_organization" class="required">Name of Fundraiser <span class="required">*</span></label>
+            <input name="FundraisingForm[name_of_organization]" id="FundraisingForm_name_of_organization" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_name_of_organization_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <label for="FundraisingForm_organization_address" class="required">Address 1<span class="required">*</span></label>
+            <input name="FundraisingForm[organization_address]" id="FundraisingForm_organization_address" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_organization_address_em_" style="display:none"></div>
+          </div>
+          <div class="adminform_row">
+            <label for="FundraisingForm_organization_address" class="required">Address 2<span class="required">*</span></label>
+            <input name="FundraisingForm[organization_address]" id="FundraisingForm_organization_address" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_organization_address_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <label for="FundraisingForm_organization_city" class="required"> City <span class="required">*</span></label>
+            <input name="FundraisingForm[organization_city]" id="FundraisingForm_organization_city" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_organization_city_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <label for="FundraisingForm_organization_state">State</label>
+            <select name="FundraisingForm[organization_state]" id="Fundraising_state">
+              <option value="">Select State</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="District of Columbia">District of Columbia</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+            <script language="javascript">print_state("Fundraising_state", 239);</script>
+            <br>
+            <div class="errorMessage" id="FundraisingForm_organization_state_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <label for="FundraisingForm_organization_zip_code" class="required"> Zip Code <span class="required">*</span></label>
+            <input name="FundraisingForm[organization_zip_code]" id="FundraisingForm_organization_zip_code" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_organization_zip_code_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <label for="FundraisingForm_point_of_contact_first_name" class="required">Point of Contact First Name <span class="required">*</span></label>
+            <input name="FundraisingForm[point_of_contact_first_name]" id="FundraisingForm_point_of_contact_first_name" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_point_of_contact_first_name_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <label for="FundraisingForm_point_of_contact_last_name" class="required">Point of Contact Last Name <span class="required">*</span></label>
+            <input name="FundraisingForm[point_of_contact_last_name]" id="FundraisingForm_point_of_contact_last_name" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_point_of_contact_last_name_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <label for="FundraisingForm_point_of_contact_phone_number" class="required">Point of Contact Phone <span class="required">*</span></label>
+            <input maxlength="15" name="FundraisingForm[point_of_contact_phone_number]" id="FundraisingForm_point_of_contact_phone_number" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_point_of_contact_phone_number_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <label for="FundraisingForm_point_of_contact_email" class="required">Point of Contact Email <span class="required">*</span></label>
+            <input name="FundraisingForm[point_of_contact_email]" id="FundraisingForm_point_of_contact_email" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_point_of_contact_email_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row" >
+            <label class="hover labelFb"> Website Address or Facebook Page * </label>
+            <input name="FundraisingForm[organization_web_address]" id="FundraisingForm_organization_web_address" type="text">
+            <br>
+            <div class="errorMessage" id="FundraisingForm_organization_web_address_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <label for="FundraisingForm_best_time_to_call" class="required">Best Time To Call <span class="required">*</span></label>
+            <select name="FundraisingForm[best_time_to_call]" id="FundraisingForm_best_time_to_call">
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening">Evening</option>
+            </select>
+            <br>
+            <div class="errorMessage" id="FundraisingForm_best_time_to_call_em_" style="display:none"></div>
+          </div>
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <label for="FundraisingForm_Comments" class="pull-left">Comments</label>
+            <textarea class="col-xs-12 col-sm-12 col-md-6  " cols="60" name="FundraisingForm[tell_us_about_your_organization]" id="FundraisingForm_tell_us_about_your_organization">
+    
+    </textarea>
+            <div class="errorMessage" id="FundraisingForm_tell_us_about_your_organization_em_" style="display:none"></div>
+          </div>
+          <div class="adminform_row">
+            <label for="FundraisingForm_verifyCode" class="pull-left">Verify Code</label>
+            <input name="FundraisingForm[verifyCode]" id="FundraisingForm_verifyCode" type="text" class="pull-left">
+            <div class="clearfix"></div>
+            <br>
+            <div class="errorMessage" id="FundraisingForm_verifyCode_em_" style="display:none"></div>
+          </div>
+          
+          <!--adminform_row-->
+          <!--adminform_row-->
+          <div class="adminform_row">
+            <input type="submit" class=" btn btn-primary " value="Submit">
+            <input type="reset" class=" btn btn-primary " value="Clear">
+          </div>
+          <!--adminform_row-->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="row row-offset-control clear-float footer">
+  <div class="container">
+    <div class="text-center">
+      <ul class="sociol-media-icons">
+        <li>
+          <a href="#">
+            <i class="fa fa-twitter fa-inverse fa-1x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook fa-inverse fa-1x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-google-plus fa-inverse fa-1x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-pinterest fa-inverse fa-1x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-youtube fa-inverse fa-1x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-inverse fa-1x"><img src="images/icons/blog-icon.png"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="row row-offset-control">
+      <div class="col-sm-7 col-md-7 col-lg-7 footer-about">
+        <h3>About Karmora</h3>
+        <p> Karmora is the premier Cash Back Website in the World!  With more than 1,500 stores to choose from we pay some of the highest rebates available on the internet.  Karmora is paid an advertising fee for directing traffic to our advertisers and we in turn share it with our Shoppers, Webstore Owners, and Fundraising Organizations.  We empower our members with the ability to have their own cash back Webstore where they can profit from the purchases of other shoppers. </p>
+        <div class="footer-logo">
+          <a href="#">
+            <img src="images/footer-logo.png" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-5 col-lg-5 latest-from-blog">
+        <h3>Latest Blogs</h3>
+        <div class="blog clear-float">
+          <p class="p-heading">
+            <img class="pull-left" src="images/mix/thumb.png" alt="thumb" />
+          <div class="description"> You'll Love Alex and Ani – 7% Commission!!!!!!!<br>
+            <span class="posted-on">Posted on:</span>
+            <span class="date">April 10, 2014</span>
+            <a class="read-more" href="#">
+              Read More
+            </a>
+          </div>
+          </p>
+        </div>
+        <div class="space-10"></div>
+        <div class="blog clear-float">
+          <p class="p-heading">
+            <img class="pull-left" src="images/mix/thumb.png" alt="thumb" />
+          <div class="description"> You'll Love Alex and Ani – 7% Commission!!!!!!!<br>
+            <span class="posted-on">Posted on:</span>
+            <span class="date">April 10, 2014</span>
+            <a class="read-more" href="#">
+              Read More
+            </a>
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Footer -->
+
+<!-- Copyright -->
+<div class="row row-offset-control copyright">
+  <div class="container">
+    <div class="text-center">
+      <ul>
+        <li>
+          <a href="#">
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Refund Policy
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Terms of Use
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            FAQ
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Disclosure Statement
+          </a>
+        </li>
+      </ul>
+      <p>© 2014 Karmora. All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
+<!-- End Copyright -->
+
+<!-- ================== Modals ================== -->
+<!-- Singup -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+        <div class="mod-head pull-right">
+          <h4>Already a Member?
+            <a href="#" data-toggle="modal" data-target="#loginModal">
+              Login
+            </a>
+          </h4>
+        </div>
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h2>Step 1 - <span class="highlight">Join Now. It´s Free !</span></h2>
+      </div>
+      <div class="signup-options">
+        <div class="login-with-facebook">
+          <i class="fa fa-facebook fa-inverse fa-7x"></i>
+          <h5 class="fb-message">Join with facebook</h5>
+          <label class="option hidden-xs">OR</label>
+        </div>
+        <div class="md-form-bg">
+          <form method="post" action="#">
+            <div class="form-inner">
+              <h3>Please Signup</h3>
+              <div class="form-fields">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <label class="form-lbl">We will not share or sell your information.</label>
+            </div>
+            <a class="btn-submit" href="#">
+              <i class="fa fa-arrow-right fa-2x"></i>
+            </a>
+          </form>
+        </div>
+      </div>
+      <div class="mod-footer clear-float">
+        <p>By becoming a Karmora Member, I agree to the Karmora
+          <a href="#">
+            terms and conditions
+          </a>
+        </p>
+        <p>Karmora is the premier cash back Webstore offering top rebates and coupons to more than 1,500+ name brand stores, Whether you are a bargain shopper looking for the best coupons, free shipping codes, promotional codes, deals, and rebates sites; a networker looking to build a community of shoppers where you can earn commissions every day; or a fundraising organization looking for an exciting new way to raise funds for your worthy cause, Karmora is the home for you!</p>
+        <p>
+          <a href="#">
+            I'd prefer to look around a bit before making a decision to join Karmora
+          </a>
+        </p>
+        <p>© 2015 Karmora, LLC. All rights reserved.
+          <a href="#">
+            Privacy Policy
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.modal -->
+<!-- Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+        <div class="mod-head pull-right">
+          <h4>Already a Member?
+            <a href="#">
+              Login
+            </a>
+          </h4>
+        </div>
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h2>Step 1 - <span class="highlight">Join Now. It´s Free !</span></h2>
+      </div>
+      <div class="signup-options login-options">
+        <div class="md-form-bg">
+          <form method="post" action="#">
+            <div class="form-inner">
+              <h3>Please Signup</h3>
+              <div class="form-fields">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <label class="form-lbl">Refered by a member
+                <a href="#">
+                  Click Here
+                </a>
+                .</label>
+            </div>
+            <a class="btn-submit" href="#">
+              <span class="start-shopping">Start Shopping</span>
+            </a>
+          </form>
+        </div>
+      </div>
+      <div class="mod-footer clear-float">
+        <p>By becoming a Karmora Member, I agree to the Karmora
+          <a href="#">
+            terms and conditions
+          </a>
+        </p>
+        <p>Karmora is the premier cash back Webstore offering top rebates and coupons to more than 1,500+ name brand stores, Whether you are a bargain shopper looking for the best coupons, free shipping codes, promotional codes, deals, and rebates sites; a networker looking to build a community of shoppers where you can earn commissions every day; or a fundraising organization looking for an exciting new way to raise funds for your worthy cause, Karmora is the home for you!</p>
+        <p>
+          <a href="#">
+            I'd prefer to look around a bit before making a decision to join Karmora
+          </a>
+        </p>
+        <p>© 2015 Karmora, LLC. All rights reserved.
+          <a href="#">
+            Privacy Policy
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- /.modal -->
+<!-- End Modals -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+  $('.po-markup > .po-link').popover({
+    trigger: 'hover',
+    html: true,  // must have if HTML is contained in popover
+
+    // get the title and conent
+    title: function() {
+      return $(this).parent().find('.po-title').html();
+    },
+    content: function() {
+      return $(this).parent().find('.po-body').html();
+    },
+
+    container: 'body',
+    placement: 'right'
+
+  });
+
+});
+</script>
+</body>
+</html>

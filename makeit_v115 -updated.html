@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- ================== Meta Information ================== -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Karmora e-store">
+<meta name="keywords" content="Shopping, Clothing, Fashion">
+<meta name="author" content="Karmora">
+
+<!-- ================== Tab Information ================== -->
+
+<title>Karmora - Dashboard</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+<!-- ================== CSS ================== -->
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-overrides.css">
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Codystar:300,400' rel='stylesheet' type='text/css'>
+
+
+<!-- ================== JavaScript ================== -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/karmora.js"></script>
+
+<!-- ================== Compatibility ================== -->
+
+<link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.default.min.css" rel="stylesheet" />
+<link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.dataviz.min.css" rel="stylesheet" />
+<link href="http://cdn.kendostatic.com/2014.2.716/styles/kendo.dataviz.default.min.css" rel="stylesheet" />
+<script src="http://cdn.kendostatic.com/2014.2.716/js/jquery.min.js"></script>
+<script src="http://cdn.kendostatic.com/2014.2.716/js/angular.min.js"></script>
+<script src="http://cdn.kendostatic.com/2014.2.716/js/kendo.all.min.js"></script>
+<!---------=============================== PIE CHART ==================================--------->
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="js/compatibility/ie10.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+  	<script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+    <script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="fonts/digital/stylesheet.css" type="text/css" charset="utf-8" />
+<style type="text/css">
+
+.digi-title,
+.digi-numbers,
+.digi-box{ font-family: 'ds-digitalnormal'!important; }
+.digi-title{font-size: 40px;  color: rgb( 0, 0, 0 );}
+
+.digi-box{ font-size:38px; padding:5px;}
+.digi-amount{ color:#FFF; background:#c92453; margin-bottom:5px;}
+.digi-timing{ border: solid 1px rgb( 226, 226, 226 ); background:#f6f6f6; }
+.timeline-panel{ background:#f6f6f6; border: solid 1px rgb( 226, 226, 226 )}
+.timeline-panel img{ border-bottom: solid 1px rgb( 226, 226, 226 )}
+.timeline-footer{ padding:10px 20px; color:#000;}
+.timeline-footer h3{ color:#000; margin:0px;}
+.goodkarmora{border: solid 1px rgb( 226, 226, 226 );}
+.gd-text{  font-size: 35.956px;   font-family: "Myriad Pro";   color: rgb( 201, 36, 99 );   font-weight: bold; padding:40px; text-align:center; margin-top:40px;}
+
+.pink-banner{ background:#C92353; color:#FFF; border:solid 1px #C92353;}
+.pink-banner.hearts{ padding:50px; text-align:center; font-size:30px; font-weight:bold;}
+.ug-row{ border:solid 1px #E8E8E8; padding:50px; text-align:center;}
+.banner-text{ text-align:center; font-weight:bold; color:#FFF; font-size: 16px; margin-bottom: 14px; line-height: 25px; }
+.ug-text{ font-size:20px; font-weight:bold; font-stretch:condensed; line-height:30px; }
+.ug-heading{ font-size:36px; font-weight:bold; font-stretch:condensed; line-height:160%; color:rgb(201,35,83); text-align:center;  }
+
+.save-join{ font-size:45px; font-weight:bold; font-stretch:condensed; line-height:67%; color:rgb(255,255,255);
+text-align:center; padding:20px; background:#C92353; margin-top:30px; }
+.check-left{ margin-top:0px !important; margin-left:-30px !important;}
+.lead{ font-size:14px;}
+.digi-numbers{ font-size: 56px;
+background: none repeat scroll 0% 0% #000;
+font-family: "Codystar",cursive !important;
+color: #00D2FF;
+line-height: 0.545;
+text-shadow: 0px 0px 5px #008AFF;
+font-weight: bold;
+height: 70px;
+padding-top: 17px;}
+.green-numbers{ color:#0F0 !important;
+text-shadow: 0px 0px 5px #FFF;
+}
+
+
+
+/*-- Large Devices, Wide Screens ---*/
+@media only screen and (max-width : 1200px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px) { 
+.digi-title{ font-size:36px;} 
+.digi-numbers{ font-size:50px;}
+.banner-text{ font-size:15px;}
+.ug-text{ font-size:20px; line-height:20px;}
+.ug-row h3{ font-size:15px;}
+.pink-banner.hearts{ font-size:24px;}
+.ug-heading{ font-size:34px;}
+.save-join{ font-size:30px;}
+
+
+
+
+
+
+}
+@media only screen and (max-width : 992px) { }
+@media only screen and (max-width : 980px) {}
+@media only screen and (max-width : 800px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.digi-title{ font-size:30px;}
+.digi-numbers{ font-size:50px;}
+.digi-box{ font-size:28px;}
+.banner-text{ font-size:14px; line-height:17px;}
+.ug-text{ font-size:14px; line-height:14px;}
+.save-join{ font-size:24px;}
+.ug-row h3{ font-size:15px; line-height:17px; margin:0px;}
+
+
+
+.pink-banner.hearts{ font-size:18px;}
+.ug-heading{ font-size:30px;}
+.save-join{ font-size:24px;}
+
+
+.gd-text { font-size: 28.956px;  font-family: "Myriad Pro";
+    color: #C92463; font-weight: bold; 
+    padding:0px; text-align: center; margin-top: 40px;}
+	
+	 }
+/*1 px query*/
+@media only screen and (max-width : 767px) { }
+/*1 px query*/
+@media only screen and (max-width : 640px) {
+.digi-title{ font-size:28px;}
+.digi-numbers{ font-size:45px;}
+.digi-box{ font-size:24px;}
+.banner-text{ font-size:14px; line-height:15px;}
+.ug-text{ font-size:14px; line-height:14px;}
+.save-join{ font-size:22px;}
+.ug-row h3{ font-size:15px; line-height:17px; margin:0px;}
+.pink-banner.hearts{ font-size:16px;}
+.ug-heading{ font-size:28px;}
+.save-join{ font-size:22px;}	
+.ord-box{ margin-bottom:20px; padding-top:10px; text-align:center;}
+.ord-box img{ width:100% !important;}
+	
+	 }
+@media only screen and (max-width : 480px) {
+.digi-title{ font-size:24px;}
+.digi-numbers{ font-size:40px;}
+.digi-box{ font-size:24px;}
+.banner-text{ font-size:14px; line-height:15px;}
+.ug-text{ font-size:14px; line-height:14px;}
+.save-join{ font-size:22px; line-height:22px;}
+.ug-row h3{ font-size:15px;ff line-height:17px; margin:0px;}
+.pink-banner.hearts{ font-size:16px;}
+.ug-heading{ font-size:24px;}
+.save-join{ font-size:22px;}	
+}
+@media only screen and (max-width : 360px) {
+.digi-title{ font-size:24px;}
+.digi-numbers{ font-size:36px;}
+.digi-box{ font-size:24px;}
+.banner-text{ font-size:14px; line-height:15px;}
+.ug-text{ font-size:14px; line-height:14px;}
+.save-join{ font-size:22px;}
+.ug-row h3{ font-size:15px; line-height:17px; margin:0px;}
+.pink-banner.hearts{ font-size:16px;}
+.ug-heading{ font-size:24px;}
+.save-join{ font-size:22px;}	
+
+	
+	
+	 }
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+.digi-title{ font-size:22px;}
+.digi-numbers{ font-size:30px;}
+.digi-box{ font-size:22px;}
+.banner-text{ font-size:14px; line-height:15px;}
+.ug-text{ font-size:14px; line-height:14px;}
+.save-join{ font-size:20px;}
+.ug-row h3{ font-size:15px; line-height:17px; margin:0px;}
+.pink-banner.hearts{ font-size:16px;}
+.ug-heading{ font-size:22px;}
+.save-join{ font-size:22px;}		 
+	
+	 }
+
+.timeline-panel h3{ font-size:17px;}
+
+
+</style>
+
+</head>
+<body role="document">
+
+<!-- Pre-Nav -->
+<div class="row row-offset-control pre-nav-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 no-offset">
+      <div class="news" id="slideshow"> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 no-offset">
+      <ul class="login-controls pull-right">
+        <li> <a href="#" data-toggle="modal" data-target="#signupModal"> New to Karmora? <b>SIGNUP</b> </a> </li>
+        <li>or</li>
+        <li> <a href="#" data-toggle="modal" data-target="#loginModal"> <b>LOGIN</b> </a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Pre-Nav --> 
+
+<!-- Header -->
+<div class="row row-offset-control header-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div id="logo"> <a href="#"> <img src="images/logo.png" alt="logo"> </a> </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class="search-socio pull-right">
+        <div class="search">
+          <div class="button"> <span class="fa fa-search"></span> </div>
+          <input type="search" placeholder="Search for Stores" class="pull-right">
+        </div>
+        <div class="clearfix"></div>
+        <ul class="sociol-media-icons">
+          <li> <a href="#"> <i class="fa fa-twitter fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-facebook fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-google-plus fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-pinterest fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-youtube fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-1x fa-black" id="social-blog"></i> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Header --> 
+<!-- profile-nav  --> 
+
+<!-- Navbar -->
+<div class="navigation">
+  <div role="navigation" class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="#" class="navbar-brand"> <span class="visible-xs">Menu</span> </a> </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav nav-hover">
+          <li> <a class="home-ic" href="#"> <i class="fa fa-home"></i> </a> </li>
+          <li> <a href="#"> Make </a> </li>
+          <li> <a href="#"> RAISE </a> </li>
+          <li> <a href="#"> Share </a> </li>
+          <li> <a href="#"> Win </a> </li>
+          <li> <a href="#"> Coupons </a> </li>
+          <li> <a href="#"> Forum </a> </li>
+          <li> <a href="#" class="live-chat"> <img src="images/icons/live_support_icon_03.png" /> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Navbar --> 
+
+<!-- Dashboard -->
+<div class="container" id="make-digi" >
+<div class="row">
+<div class="col-xs-12 col-sm-7 col-centered text-center"> <h2>JOIN KARMORA AS A WEBSTORE OWNER AND START CLAIMING YOUR PIECE 
+OF THE $300 BILLION DOLLAR PER YEAR ONLINE SHOPPING INDUSTRY!</h2>
+
+</div></div>
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-centered text-center digi-numbers"> 15,501,036,<span class="green-numbers">940,143</span></div></div>
+<div class="row">
+<div class="col-xs-10 col-sm-4 col-centered">
+<h2>More than <span class="pink-text"> 200 MILLION</span> US Consumers...
+Will spend more than <span class="pink-text"> $300 BILLION</span>
+Shopping Online in <span class="pink-text"> 2015!</span>
+</h2>
+<h3 style="color:#000">That’s More Than...</h3>
+
+</div></div>
+<div class="row" style="margin:10px 0px;">
+	<div class="col-xs-6 col-sm-3 text-center digi-box">
+    <div class="digi-amount">$800 MILLION</div>
+    <div class="digi-timing">PER DAY</div>
+    </div>
+	<div class="col-xs-6 col-sm-3 text-center digi-box">
+    <div class="digi-amount">$34 MILLION</div>
+    <div class="digi-timing">PER HOUR</div>
+    </div>
+	<div class="col-xs-6 col-sm-3 text-center digi-box">
+    <div class="digi-amount">$570,000.00</div>
+    <div class="digi-timing">PER MINUTE</div>
+    </div>
+	<div class="col-xs-6 col-sm-3 text-center digi-box">
+    <div class="digi-amount">$9,000.00</div>
+    <div class="digi-timing">PER SECOND</div>
+    </div>
+
+</div>
+<div class="row" style="margin:10px 0px 30; border:solid 1px #C92353; padding:20px; margin-bottom:50px;">
+<div class="col-xs-12 col-sm-9 col-centered"><h2>WEBSTORE OWNERS ENJOY A CUTTING EDGE… STATE OF THE ART… CUSTOMIZABLE… 
+MONEY MAKING… AFFILAITE ADVERTISING PORTAL OF EPIC PROPORTION!</h2>
+  <p>&nbsp;</p>
+</div>
+<div class="col-xs-12 col-sm-3 ord-box">
+<div class="timeline-panel">
+            <div class="timeline-heading">
+                <img class="img-responsive" src="images/mix/tcol-img-1-1.png" alt="th-img" />
+              
+            </div>
+            <div class="timeline-footer text-center"> 
+            <h3> Over 1,700 name brand stores & millions of products for sale!</h3> </div>
+          </div>
+
+
+</div>
+<div class="col-xs-12 col-sm-3 ord-box">
+<div class="timeline-panel">
+            <div class="timeline-heading">
+                <img class="img-responsive" src="images/mix/tcol-img-1.png" alt="th-img" />
+              
+            </div>
+            <div class="timeline-footer text-center"> 
+            <h3> No autofill orders, shipping or
+handling of products!</h3> </div>
+          </div>
+
+
+</div>
+<div class="col-xs-12 col-sm-3 ord-box">
+<div class="timeline-panel">
+            <div class="timeline-heading">
+                <img  src="images/mix/tcol-img-2.png" alt="th-tc-img" class="img-responsive" />
+              
+            </div>
+            <div class="timeline-footer text-center "> <h3> Built in... Cutting Edge... Online 
+marketing tools & viral videos!</h3> </div>
+          </div>
+
+
+</div>
+<div class="col-xs-12 col-sm-3 ord-box">
+<div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="images/mix/tcol-img-3.png"  alt="th-tc-img2" />
+              
+            </div>
+            <div class="timeline-footer text-center "> <h3>World Class coaching, training
+and support!</h3> </div>
+          </div>
+
+
+</div>
+
+
+
+</div>
+
+
+<div class="row" >
+<div class="col-xs-10 col-sm-8 col-centered" style="padding:0px;">
+<div class="col-xs-9 col-centered pink-banner" style="padding:0px;">
+<div class="col-xs-12 col-sm-6" >
+<h3 class="banner-text">You will have a great time building your unlimited shopping community while earning great residual bonuses and shopping commissions!</h3>
+
+</div>
+<div class="col-xs-12 col-sm-6" style="padding:0px;">
+<img src="images/mix/wow-girl.png" class="img-responsive" alt="wow-girl" />
+</div>
+<div class="clearfix"></div>
+
+</div>
+
+
+
+
+</div>
+<div class="clearfix"></div>
+<div class="col-xs-10 col-sm-8 col-centered ug-row">
+<div class="col-xs-12 col-sm-6" style="padding:0px;"><img src="images/mix/offer.png" class="img-responsive col-centered" alt="offer-img" /></div>
+<div class="col-xs-12 col-sm-6">
+<span class="ug-text">Starting a Home Based Business doesn’t have to cost a fortune!  For a limited time you can save 33% off the regular price and start claiming your piece of the BILLION DOLLAR pie TODAY!</span>
+</div>
+
+
+<div class="clearfix"></div>
+
+</div>
+
+<div class="clearfix"></div>
+<div class="col-xs-10 col-sm-8 col-centered ug-row" >
+<div class="col-xs-12 col-sm-6" ><img src="images/mix/risk-free.png" class="img-responsive col-centered" alt="risk-free" /></div>
+<div class="col-xs-12 col-sm-6">
+<h3>And... It’s Absolutely RISK FREE!</h3>
+
+<h3 style="color:#000">If you aren’t happy with being a Webstore Owner any time, for any reason, in the first 7 days we will 
+happily refund your money with no questions asked!</h3>
+
+</span>
+</div>
+
+
+<div class="clearfix"></div>
+
+</div>
+
+<div class="col-xs-10 col-sm-8 col-centered" style="padding:0px;">
+<div class="col-xs-12 pink-banner hearts" >
+<span class="pb-text">Join our team of Webstore Owners TODAY!</span>
+<div class="clearfix"></div>
+<span class="pb-heading">We GUARANTEE you’ll <img src="images/mix/heart-img.png"> It!</span>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+  
+</div>
+  
+<div class="row">
+<div class="col-xs-12 col-sm-8 col-centered">
+<h2 class="ug-heading">Join TODAY via Credit or Debit Card</h2>
+<h3 style="color:#000;">Rest assured that your transaction with Karmora is safe and secure with Symantec’s highest level website security with 256-bit encryption.</h3>
+
+
+</div>
+</div>  
+  
+  
+  
+</div><!-- .container #pay4mypurchase_v2 --> 
+
+<!-- Footer -->
+<div class="row row-offset-control clear-float footer">
+  <div class="container">
+    <div class="text-center">
+      <ul class="sociol-media-icons">
+        <li> <a href="#"> <i class="fa fa-twitter fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-facebook fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-google-plus fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-pinterest fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-youtube fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-inverse fa-1x"><img src="images/icons/blog-icon.png" alt="blog-img" /> </i> </a> </li>
+      </ul>
+    </div>
+    <div class="row row-offset-control">
+      <div class="col-sm-7 col-md-7 col-lg-7 footer-about">
+        <h3>About Karmora</h3>
+        <p> Karmora is the premier Cash Back Website in the World!  With more than 1,500 stores to choose from we pay some of the highest rebates available on the internet.  Karmora is paid an advertising fee for directing traffic to our advertisers and we in turn share it with our Shoppers, Webstore Owners, and Fundraising Organizations.  We empower our members with the ability to have their own cash back Webstore where they can profit from the purchases of other shoppers. </p>
+        <div class="footer-logo"> <a href="#"> <img src="images/footer-logo.png" alt="logo" /> </a> </div>
+      </div>
+      <div class="col-md-5 col-md-5 col-lg-5 latest-from-blog">
+        <h3>Latest Blogs</h3>
+        <div class="blog clear-float">
+          <p class="p-heading"> 
+                <img class="pull-left" src="images/mix/thumb.png" alt="thumb" />
+                <div class="description"> You'll Love Alex and Ani – 7% Commission!!!!!!!<br>
+                <span class="posted-on">Posted on:</span> <span class="date">April 10, 2014</span> <a class="read-more" href="#"> Read More </a> </div>
+          </p>
+        </div>
+        <div class="space-10"></div>
+        <div class="blog clear-float">
+          <p class="p-heading"> 
+              <img class="pull-left" src="images/mix/thumb.png" alt="thumb" />
+          <div class="description"> You'll Love Alex and Ani – 7% Commission!!!!!!!<br>
+            <span class="posted-on">Posted on:</span> <span class="date">April 10, 2014</span> <a class="read-more" href="#"> Read More </a> </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Footer --> 
+
+<!-- Copyright -->
+<div class="row row-offset-control copyright">
+  <div class="container">
+    <div class="text-center">
+      <ul>
+        <li> <a href="#"> Privacy Policy </a> </li>
+        <li> <a href="#"> Refund Policy </a> </li>
+        <li> <a href="#"> Terms of Use </a> </li>
+        <li> <a href="#"> FAQ </a> </li>
+        <li> <a href="#"> Contact Us </a> </li>
+        <li> <a href="#"> Disclosure Statement </a> </li>
+      </ul>
+      <p>© 2014 Karmora. All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
+<!-- End Copyright --> 
+<script>
+
+$(document).ready(function() {
+
+  $('.po-link').popover({
+    trigger: 'hover',
+    html: true,  // must have if HTML is contained in popover
+
+    // get the title and conent
+    title: function() {
+      return $(this).parent().find('.po-title').html();
+    },
+    content: function() {
+      return $(this).parent().find('.po-body').html();
+    },
+
+    container: 'body',
+    placement: 'right'
+
+  });
+
+});
+</script>
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

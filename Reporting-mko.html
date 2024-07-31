@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--==================M eta Information==================-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Karmora e-store">
+<meta name="keywords" content="Shopping, Clothing, Fashion">
+<meta name="author" content="Karmora">
+<!--==================T ab Information==================- ->
+
+<title>Karmora - Dashboard</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+<!--==================C SS==================-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-overrides.css">
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet"
+    type="text/css">
+<!--==================J avaScript==================- ->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/karmora.js"></script>
+
+<!--==================C ompatibility==================-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="js/compatibility/ie10.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements
+    and media queries -->
+<!--[if lt IE 9]>
+      <link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+      <script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+      <script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+    <![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media
+    queries -->
+<!--[if lt IE 8]>
+      <link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+      <script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+      <script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body role="document">
+<!-- Pre-Nav -->
+<div class="row row-offset-control pre-nav-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 no-offset">
+      <div class="news" id="slideshow"> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 no-offset">
+      <ul class="login-controls pull-right">
+        <li> <a href="#" data-toggle="modal" data-target="#signupModal">New to Karmora? <b>SIGNUP</b></a> </li>
+        <li>or</li>
+        <li> <a href="#" data-toggle="modal" data-target="#loginModal"><b>LOGIN</b></a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Pre-Nav --> 
+<!-- Header -->
+<div class="row row-offset-control header-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div id="logo"> <a href="#"> <img src="images/logo.png" alt="logo"> </a> </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class="search-socio pull-right">
+        <div class="search">
+          <div class="button"> <span class="fa fa-search"></span> </div>
+          <input type="search" placeholder="Search for Stores" class="pull-right">
+        </div>
+        <div class="clearfix"></div>
+        <ul class="sociol-media-icons">
+          <li> <a href="#"> <i class="fa fa-twitter fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-facebook fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-google-plus fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-pinterest fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-youtube fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-1x fa-black" id="social-blog"></i> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Header --> 
+<!---profile-nav-----> 
+<!-- Navbar -->
+<div class="navigation">
+  <div role="navigation" class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle"
+            type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="#" class="navbar-brand"> <span class="visible-xs">Menu</span> </a> </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav nav-hover">
+          <li> <a class="home-ic" href="#"> <i class="fa fa-home"></i> </a> </li>
+          <li> <a href="#"> Make </a> </li>
+          <li> <a href="#"> RAISE </a> </li>
+          <li> <a href="#"> Share </a> </li>
+          <li> <a href="#"> Win </a> </li>
+          <li> <a href="#"> Coupons </a> </li>
+          <li> <a href="#"> Forum </a> </li>
+          <li> <a href="#" class="live-chat"> <img src="images/icons/live_support_icon_03.png"> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row border-bottom" id="profile-nav" style="padding-bottom:10px; margin-bottom:20px;">
+    <div class="col-md-8  col-xs-offset-1 col-sm-offset-3 col-md-offset-4">
+      <ul class="nav nav-pills">
+        <li> <a href="#">DASHBOARD</a> </li>
+        <li> <a href="#">PROFILE</a> </li>
+        <li> <a href="#">REPORTING</a> </li>
+        <li> <a href="#">KASH ME OUT</a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Navbar -->
+<div class=" container" id="reporting">
+  <div class="row" id="head-reporting">
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <h1 class=" text-left">My Cash Out</h1>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-5 text-right pull-right " id="sh-right">Wanna earn kash on the purchases made by members of your Shopping Community?
+      <a href="#" style="font-weight:bold;">CLICK HERE</a> to upgrade to Webstore Owner Today!</div>
+    <!--sh-right--> 
+  </div>
+  <div class="row" id="owner-row">
+    <div class="col-xs-12 col-sm-4 col-md-3 " id="left-table">
+      <table>
+        <tbody>
+          <tr>
+            <td class="td-pink">Mike Maksudian: </td>
+            <td> Webstore Owner </td>
+          </tr>
+          <tr>
+            <td class="td-pink">Total Available: </td>
+            <td> $29.82 </td>
+          </tr>
+          <tr>
+            <td class="td-pink">YTD Earnings: </td>
+            <td> $249.38 </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-5 pull-right">
+      <select placeholder="2014" class=" col-xs-12  col-md-4">
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+      </select>
+      <select placeholder="2014" class=" col-xs-12  col-md-4 col-md-offset-1">
+        <option value="01">January</option>
+    <option value="02">February</option>
+    <option value="03">March</option>
+    <option value="04">April</option>
+    <option value="05">May</option>
+    <option value="06">June</option>
+    <option value="07">July</option>
+    <option value="08">August</option>
+    <option value="09">September</option>
+    <option value="10">October</option>
+    <option value="11">November</option>
+    <option value="12">December</option>
+      </select>
+      <a class="btn btn-danger btn-lg pull-right" href="#" id="submit-btn">Submit</a> </div>
+  </div>
+  <!---/owner-row-------> 
+</div>
+<div class="container">
+  <div class="row">
+    <div class=" col-xs-12 col-sm-12 col-md-12 ">
+      <table class="table" id="hunt-table">
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>NaTotal Earnedme</th>
+            <th>Total Pending</th>
+            <th>Total Available</th>
+            <th>Kashed Out</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Jan-14 </td>
+            <td> $42.84 </td>
+            <td> $0.00 </td>
+            <td> $0.00 </td>
+            <td> $42.84 </td>
+          </tr>
+          <tr class="active">
+            <td> Feb-14 </td>
+            <td> $25.69 </td>
+            <td> $0.00 </td>
+            <td> $0.00 </td>
+            <td> $25.69 </td>
+          </tr>
+          <tr>
+            <td> Mar-14 </td>
+            <td> $5.86 </td>
+            <td> $3.02 </td>
+            <td> $2.84 </td>
+            <td> $0.00 </td>
+          </tr>
+          <tr class="active">
+            <td> Apr-14 </td>
+            <td> $2.89 </td>
+            <td> $2.89 </td>
+            <td> $0.00 </td>
+            <td> $0.00 </td>
+          </tr>
+          <tr>
+            <td> May-14 </td>
+            <td> $9.87 </td>
+            <td> $9.87 </td>
+            <td> $0.00 </td>
+            <td> $0.00 </td>
+          </tr>
+          <tr class="tr-total">
+            <td> Total </td>
+            <td> $87.15 </td>
+            <td> $15.78 </td>
+            <td> $2.84 </td>
+            <td> $68.53 </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class=" col-xs-12 col-sm-12 col-md-12 ">
+      <h3 class="text-left border-bottom" style="margin-bottom:20px;">Good Karmora Bonus</h3>
+      <table class="table" id="hunt-table">
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>NaTotal Earnedme</th>
+            <th>Total Pending</th>
+            <th>Total Available</th>
+            <th>Kashed Out</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Jan-14 </td>
+            <td> $24.78 </td>
+            <td> $0.00 </td>
+            <td> <a href="#" class="td-upgrade"> UPGRADE </a></td>
+            <td> $24.87 </td>
+          </tr>
+          <tr class="active">
+            <td> Feb-14 </td>
+            <td> $54.72 </td>
+            <td> $0.00 </td>
+            <td> <a href="#" class="td-upgrade"> UPGRADE </a></td>
+            <td> $54.72 </td>
+          </tr>
+          <tr>
+            <td> Mar-14 </td>
+            <td> $78.16 </td>
+            <td> $51.18 </td>
+            <td> <a href="#" class="td-upgrade"> UPGRADE </a></td>
+            <td> $0.00 </td>
+          </tr>
+          <tr class="active">
+            <td> Apr-14 </td>
+            <td> $0.00 </td>
+            <td> $0.00 </td>
+            <td> <a href="#" class="td-upgrade"> UPGRADE </a></td>
+            <td> $0.00 </td>
+          </tr>
+          <tr>
+            <td> May-14 </td>
+            <td> $4.57 </td>
+            <td> $4.57 </td>
+            <td> <a href="#" class="td-upgrade"> UPGRADE </a></td>
+            <td> $0.00 </td>
+          </tr>
+          <tr class="tr-total">
+            <td> Total</td>
+            <td> $162.23</td>
+            <td> $55.75</td>
+            <td>&nbsp;</td>
+            <td> $79.59 </td>
+          </tr>
+          <tr class="tr-gtotal">
+            <td> Grand Total </td>
+            <td> $249.38</td>
+            <td> $71.53</td>
+            <td> </td>
+            <td> $148.12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row" id="total-row">
+    <div class="col-md-4">
+      <table class="table" id="hunt-table">
+        <tr>
+          <td class="total-bold">Total Pending </td>
+          <td> $66.71 </td>
+        </tr>
+                  <tr class="active">
+          <td class="total-bold">Total Paid </td>
+          <td> $0.00 </td>
+        </tr>
+        <tr>
+          <td class="total-bold">Total Available </td>
+          <td> $66.71 </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-3"> <a class="btn btn-block btn-lg" href="#" data-toggle="modal" id="kash-me-out">KASH ME OUT</a> </div>
+  </div>
+  <div class="row">
+    <div class=" col-xs-12 col-sm-12 col-md-12 ">
+      <table class="table" id="hunt-table">
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="total-bold">Pending </td>
+            <td colspan="3">Sale has been reported by the advertiser but has not been paid to Karmora. </td>
+          </tr>
+          <tr class="active">
+            <td class="total-bold"> Available </td>
+            <td colspan="3">Karmora has received payment from advertiser and the amount is available to be Kashed Out. </td>
+          </tr>
+          <tr>
+            <td class="total-bold">Paid </td>
+            <td colspan="3">Karmora member has Kashed Out and payment has been processed. </td>
+          </tr>
+          <tr class="active">
+            <td class="total-bold">Return </td>
+            <td colspan="3">All or a portion of a purchase has been returned to the advertiser and the amount shown has been deducted. </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<div class="row row-offset-control clear-float footer">
+  <div class="container">
+    <div class="text-center">
+      <ul class="sociol-media-icons">
+        <li> <a href="#"> <i class="fa fa-twitter fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-facebook fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-google-plus fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-pinterest fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-youtube fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-inverse fa-1x"><img src="images/icons/blog-icon.png"></i> </a> </li>
+      </ul>
+    </div>
+    <div class="row row-offset-control">
+      <div class="col-sm-7 col-md-7 col-lg-7 footer-about">
+        <h3>About Karmora</h3>
+        <p>Karmora is the premier Cash Back Website in the World! With more than
+          1,500 stores to choose from we pay some of the highest rebates available
+          on the internet. Karmora is paid an advertising fee for directing traffic
+          to our advertisers and we in turn share it with our Shoppers, Webstore
+          Owners, and Fundraising Organizations. We empower our members with the
+          ability to have their own cash back Webstore where they can profit from
+          the purchases of other shoppers.</p>
+        <div class="footer-logo"> <a href="#"> <img src="images/footer-logo.png" alt="logo"> </a> </div>
+      </div>
+      <div class="col-md-5 col-md-5 col-lg-5 latest-from-blog">
+        <h3>Latest Blogs</h3>
+        <div class="blog clear-float">
+          <p class="p-heading"> <img class="pull-left" src="images/mix/thumb.png" alt="thumb"> </p>
+          <div class="description">You'll Love Alex and Ani – 7% Commission!!!!!!! <br>
+            <span class="posted-on">Posted on:</span> <span class="date">April 10, 2014</span> <a class="read-more" href="#"> Read More </a> </div>
+          <p></p>
+        </div>
+        <div class="space-10"></div>
+        <div class="blog clear-float">
+          <p class="p-heading"> <img class="pull-left" src="images/mix/thumb.png" alt="thumb"> </p>
+          <div class="description">You'll Love Alex and Ani – 7% Commission!!!!!!! <br>
+            <span class="posted-on">Posted on:</span> <span class="date">April 10, 2014</span> <a class="read-more" href="#"> Read More </a> </div>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Footer --> 
+<!-- Copyright -->
+<div class="row row-offset-control copyright">
+  <div class="container">
+    <div class="text-center">
+      <ul>
+        <li> <a href="#"> Privacy Policy </a> </li>
+        <li> <a href="#"> Refund Policy </a> </li>
+        <li> <a href="#"> Terms of Use </a> </li>
+        <li> <a href="#"> FAQ </a> </li>
+        <li> <a href="#"> Contact Us </a> </li>
+        <li> <a href="#"> Disclosure Statement </a> </li>
+      </ul>
+      <p>© 2014 Karmora. All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
+<!-- End Copyright --> 
+<!--==================M odals==================- -> 
+
+<!-- Singup -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+        <div class="mod-head pull-right">
+          <h4>Already a Member? <a href="#" data-toggle="modal" data-target="#loginModal"> Login </a> </h4>
+        </div>
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h2>Step 1 - <span class="highlight">Join Now. It´s Free !</span> </h2>
+      </div>
+      <div class="signup-options">
+        <div class="login-with-facebook"> <i class="fa fa-facebook fa-inverse fa-7x"></i>
+          <h5 class="fb-message">Join with facebook</h5>
+          <label class="option hidden-xs">OR</label>
+        </div>
+        <div class="md-form-bg">
+          <form method="post" action="#">
+            <div class="form-inner">
+              <h3>Please Signup</h3>
+              <div class="form-fields">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+              </div>
+              <label class="form-lbl">We will not share or sell your information.</label>
+            </div>
+            <a class="btn-submit" href="#"> <i class="fa fa-arrow-right fa-2x"></i> </a>
+          </form>
+        </div>
+      </div>
+      <div class="mod-footer clear-float">
+        <p>By becoming a Karmora Member, I agree to the Karmora <a href="#"> terms and conditions </a> </p>
+        <p>Karmora is the premier cash back Webstore offering top rebates and coupons
+          to more than 1,500+ name brand stores, Whether you are a bargain shopper
+          looking for the best coupons, free shipping codes, promotional codes, deals,
+          and rebates sites; a networker looking to build a community of shoppers
+          where you can earn commissions every day; or a fundraising organization
+          looking for an exciting new way to raise funds for your worthy cause, Karmora
+          is the home for you!</p>
+        <p> <a href="#"> I'd prefer to look around a bit before making a decision to join Karmora </a> </p>
+        <p>© 2015 Karmora, LLC. All rights reserved. <a href="#"> Privacy Policy </a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.modal --> 
+<!-- Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+        <div class="mod-head pull-right">
+          <h4>Already a Member? <a href="#"> Login </a> </h4>
+        </div>
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h2>Step 1 - <span class="highlight">Join Now. It´s Free !</span> </h2>
+      </div>
+      <div class="signup-options login-options">
+        <div class="md-form-bg">
+          <form method="post" action="#">
+            <div class="form-inner">
+              <h3>Please Signup</h3>
+              <div class="form-fields">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+              </div>
+              <label class="form-lbl">Refered by a member <a href="#"> Click Here </a>.</label>
+            </div>
+            <a class="btn-submit" href="#"> <span class="start-shopping">Start Shopping</span> </a>
+          </form>
+        </div>
+      </div>
+      <div class="mod-footer clear-float">
+        <p>By becoming a Karmora Member, I agree to the Karmora <a href="#"> terms and conditions </a> </p>
+        <p>Karmora is the premier cash back Webstore offering top rebates and coupons
+          to more than 1,500+ name brand stores, Whether you are a bargain shopper
+          looking for the best coupons, free shipping codes, promotional codes, deals,
+          and rebates sites; a networker looking to build a community of shoppers
+          where you can earn commissions every day; or a fundraising organization
+          looking for an exciting new way to raise funds for your worthy cause, Karmora
+          is the home for you!</p>
+        <p> <a href="#"> I'd prefer to look around a bit before making a decision to join Karmora </a> </p>
+        <p>© 2015 Karmora, LLC. All rights reserved. <a href="#"> Privacy Policy </a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.modal --> 
+<!-- End Modals --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual
+    files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

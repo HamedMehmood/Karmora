@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- ================== Meta Information ================== -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Karmora e-store">
+<meta name="keywords" content="Shopping, Clothing, Fashion">
+<meta name="author" content="Karmora">
+
+<!-- ================== Tab Information ================== -->
+
+<title>Karmora - Dashboard</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+<!-- ================== CSS ================== -->
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-overrides.css">
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+
+<!-- ================== JavaScript ================== -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/karmora.js"></script>
+
+<!-- ================== Compatibility ================== -->
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script type="text/javascript" src="js/compatibility/ie10.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+  	<script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+    <script type="text/javascript" src="js/compatibility/html5shiv.min.js"></script>
+  	<script type="text/javascript" src="js/compatibility/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body role="document">
+<style>
+#social-btn-r a{ background-image:none; padding-top:10px;}
+#social-btn-r a:hover{ background-image:none;}
+.css3-btn{ font-size: 16px; color: rgb(255,255,255); padding: 9px 17px; height: 40px;}
+
+</style>
+
+<!-- Pre-Nav -->
+<div class="row row-offset-control pre-nav-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 no-offset">
+      <div class="news" id="slideshow"> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> <i>Check out the Karmora Blog everyday for great Tips and Trainings!</i> </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 no-offset">
+      <ul class="login-controls pull-right">
+        <li> <a href="#" data-toggle="modal" data-target="#signupModal"> New to Karmora? <b>SIGNUP</b> </a> </li>
+        <li>or</li>
+        <li> <a href="#" data-toggle="modal" data-target="#loginModal"> <b>LOGIN</b> </a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Pre-Nav --> 
+
+<!-- Header -->
+<div class="row row-offset-control header-bg">
+  <div class="container">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div id="logo"></div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class="search-socio pull-right">
+        <div class="search">
+          <div class="button"> <span class="fa fa-search"></span> </div>
+          <input type="search" placeholder="Search for Stores" / class="pull-right">
+        </div>
+        <div class="clearfix"></div>
+        <ul class="sociol-media-icons">
+          <li> <a href="#"> <i class="fa fa-twitter fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-facebook fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-google-plus fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-pinterest fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-youtube fa-1x fa-black"></i> </a> </li>
+          <li> <a href="#"> <i class="fa fa-1x fa-black" id="social-blog"></i> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Header --> 
+<!---profile-nav-----> 
+
+<!-- Navbar -->
+<div class="navigation">
+  <div role="navigation" class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="#" class="navbar-brand"> <span class="visible-xs">Menu</span> </a> </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav nav-hover">
+          <li> <a class="home-ic" href="#"> <i class="fa fa-home"></i> </a> </li>
+          <li> <a href="#"> Make </a> </li>
+          <li> <a href="#"> RAISE </a> </li>
+          <li> <a href="#"> Share </a> </li>
+          <li> <a href="#"> Win </a> </li>
+          <li> <a href="#"> Coupons </a> </li>
+          <li> <a href="#"> Forum </a> </li>
+          <li> <a href="#" class="live-chat"> <img src="images/icons/live_support_icon_03.png"> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Navbar -->
+<div class="container">
+  <div class="row">
+    <h1>Earn Unlimited $5 Referral Bonuses!</h1>
+    <div class="col-xs-11 col-sm-10 col-md-10 col-centered">
+      <p>Earn $5 Cash for every active member that joins your Community!  That’s right… you earn $5 bucks for every friend, family member, teacher, coach, waiter, waitress, hair dresser, barber, coworker, neighbor, fundraising organization, business, realtor, insurance agent, and any casual acquaintance that joins your shopping community for FREE!  Seriously… who doesn’t want to earn up to 30% Cash Back for FREE!</p>
+    </div>
+  </div>
+  <div class="row">
+    <h2>4 Simple Ways To Receive Bunches of $5 Bonuses!</h2>
+  </div>
+  <div class="row">
+    <div class=" col-xs-12 col-sm-12 col-md-12">
+      <div class="panel-group" id="accordion">
+        <div class="panel "> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          <h2 class="col-md-5 col-centered numbers-heading">
+            <div class="h-number">1</div>
+            Earn $5 in 5 Minutes in Person!</h2>
+          </a>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Hey Debbie… Do you shop online?</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>You know I do!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>How would you like to earn up to 30% cash back at over 1,700 stores like Macy’s, Kohl’s, Walmart, Target, Best Buy, and Nordstrom?&nbsp; And, it’s totally FREE to join!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>I love Nordstrom!&nbsp; I spend a small fortune at Nordstrom every month.&nbsp; And, it’s totally FREE to join?</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Yep, totally FREE.&nbsp; Let me show you (Kim pulls up her Karmora Webstore on her Smart Phone and finds Nordstrom in the search bar). &nbsp;You see… over 1,700 stores and here is Nordstrom.&nbsp; Look… Up to 14% Cash Back!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>14%... that’s awesome!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Totally!&nbsp; Karmora has practically every store that you shop at, and you can earn cash back at all of them.&nbsp; </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>So… over 1,700 stores where I can earn cash back and it’s FREE?</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Yes… FREE!&nbsp; All you have to do join my Shopping Community and it will automatically create your very own Webstore where you too can earn cash back. </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Shut the front door!&nbsp; I have shopping that I was going to do today.&nbsp; Let’s do it.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Ok… just enter your name, email address, whatever user name you would like and a password in this screen and you will have your very own Webstore just like mine where you can earn up to 30% cash back.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>You don’t need my credit card or anything?</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Nope!&nbsp; I said it was totally FREE!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Alright, I’m in!&nbsp; (Debbie completes the sign up form and clicks “Start Shopping.”)</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Now scroll down and look… (Debbie scrolls down and sees that the Webstore has her name on it already.)</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Wow… look at that!&nbsp; My very own Webstore!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>You should have received an email welcoming you to my Karmora Shopping Community with some instructions and tips.&nbsp; Look… I received an email letting me know that you joined my community (Kim shows Debbie the join notification that she received on her phone showing that Debbie has joined her community).</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>That’s awesome!  Let me check my email.   Yep… got it!</p>
+                </div>
+                <div class="sep"></div>
+                <h2> Kim just signed up Debbie in less than 5 minutes and earned herself a $5 referral bonus.  It’s that simple!  Anyone that you know who shops online will welcome your referral.  But there is more… </h2>
+                <div class="sep"></div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>And if that weren’t exciting enough… when you sign someone from your Webstore you will earn a $5 referral bonus from Karmora just like I did by signing you up (Kim pulls up her Good Karmora report from her dashboard and shows Debbie the $5 bonus).</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>$5 for signing up my friends for FREE so they can earn cash back at awesome stores?&nbsp; What’s not to like?!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Right!&nbsp; I’ve been signing up everybody I know before someone else gets to them.&nbsp; Karmora has a lot of great ways to attract your contacts via email and social media.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Did you sign up Kathy?&nbsp; She spends a boat load online!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Not yet, but that is a good one.&nbsp; You should sign her up right away.&nbsp; I am not the only Karmora Webstore Owner around here ya know!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Webstore Owner… is that what I am?</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>No… you are a Karmora Shopper, which is free and you get to shop and earn cash back and referral bonuses.&nbsp; I upgraded to Webstore Owner and now I get to earn 20% of the cash back paid on every purchase made by every member in my community.&nbsp; </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>So… If I spend $200 today at Nordstrom and earn say 10% cash back, I’d get $20.&nbsp; And you would get 20% of that?&nbsp; </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Yep!&nbsp; I would earn $4 on your shopping and $5 referral bonus.&nbsp; A total of $9.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Wow!&nbsp; How many people do you have in your shopping community already?</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>You are my 64th.&nbsp; I have been signing up practically everyone I know that shops online.&nbsp; If they shop online they automatically get it right away!&nbsp; My goal is to have over 500 members in my community this year and I think it is going to be pretty easy.&nbsp; And it’s fun!&nbsp; It really is.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Well, I want to be a Webstore Owner too… What do I have to do and how much does it cost? </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>All you have to do is click the upgrade button on your homepage to become a Webstore Owner.&nbsp; The cost is $99.95 up front and $3.95 per month for Webstore maintenance.&nbsp; The $3.95 is included in the initial $99.95.&nbsp; You will start being charged $3.95 starting next month.&nbsp; </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Well, that’s not bad at all!&nbsp; So, just $99.95 today and $3.95 per month starting next month?&nbsp; Wow, I will cover your $3.95 when I finish shopping at Nordstrom…. Your welcome!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Thanks!&nbsp; But, it is even better than that… As a Webstore Owner I earn $50 on every member of my community that upgrades to Webstore Owner.&nbsp; I have already had four of my members upgrade earning me $200 in Good Karmora Cash Bonuses.&nbsp;&nbsp; So, I have already covered all of my fees for the next two years!&nbsp; Everything else from here is gravy!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>That’s genius!&nbsp; So… if I upgrade to Webstore Owner I can be paid 20% of the cash back earned by the members of my community and $50 each time one of them upgrade to Webstore Owner in addition to the $5 referral bonuses?&nbsp; And, after 3 upgrades my fees for the year are basically covered? </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Exactly.&nbsp; Karmora will pay you $5 referral bonuses while you build your community as a FREE shopper.&nbsp; Once someone is a member of your community they are always a member of your community regardless of whether you decide to upgrade or not.&nbsp; However, you must upgrade to Webstore Owner before you can earn Good Karmora Bonuses.&nbsp; And, why take any chances?&nbsp; I waited to upgrade and one of my community members decided to upgrade before I did and I lost out on the $50 bucks!&nbsp; </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>That’s a bummer… Is this multilevel marketing?</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>You are only paid on the direct members of your Karmora Community.&nbsp; What that means is that I will only be paid on your activity.&nbsp; I will not be paid on who you sign up or who they sign up.&nbsp; It is more of a direct sale relationship.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>That makes sense and this sounds fun and awesome all at the same time!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>I have only shown you the tip of the Karmora iceberg.&nbsp; I won $25 in their Treasure Hunt Promotion just by clicking on a store… and there is so much more.&nbsp; You’re really going to love it!&nbsp; And, if you decide to become a Webstore Owner, you get a no questions asked 7 day money back guarantee.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Sounds like a no brainer!&nbsp; </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>I agree!&nbsp; Do you have at least two people in mind that you think would be interested in becoming Webstore Owners like you and me? &nbsp;&nbsp;</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Well… Katie and Samantha for sure… and Betty, and Sue and Kevin…. Oh Yeah…&nbsp; I have way more than 2!&nbsp; Have you signed up any of them yet?</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Hmmmm… Are you talking about Sue from Starbucks?&nbsp; Yeah… she’s already in my community and is a Webstore Owner!&nbsp; But, I haven’t spoken with the others yet.&nbsp; Let’s go ahead and upgrade you now.&nbsp; If they are not interested in upgrading, you can always cancel before the trial period is up and you will be reverted back to a Shopper and given a full refund.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Sounds good to me.&nbsp; Let’s do it. </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>OK… go to the welcome email on your phone and click the link to your Webstore and log in.&nbsp; </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>OK… I’m logged in.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Now click the upgrade button under your name and fill out the billing and credit card information on the page.&nbsp; Don’t worry Karmora is Symantec Verified and this is a very safe online transaction. &nbsp;</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-karla">
+                  <p>Done!&nbsp; I am now a Webstore Owner!&nbsp; I’m gonna sign up my coworker Pam as soon as I get back to the office!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 chatter-paula">
+                  <p>Awesome Debbie… you’re gonna love Karmora!&nbsp; Now, make sure that you read the welcome email thoroughly, upload your photo on your profile page and surf the site.&nbsp; Remember there is free cash out there waiting to be found just by clicking on stores!</p>
+                </div>
+                <div class="sep"></div>
+                <h2><strong>The End… Or is it just the beginning?</strong></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel ">
+          
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            <h2 class="col-md-5 col-centered numbers-heading">
+              <div class="h-number">2</div>
+              Earn $5 a Pop Sharing Hilarious Commercials! </h2>
+            </a> 
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-md-12">
+                <p> Building a large community of shoppers earning you big commissions is easy when using Karmora Viral Commercials.  Simply select the commercials that you like and share them on your favorite social media outlets.  Be consistent and post the commercials daily and watch your shopping community grow!  Each commercial has been written and produced for Karmora by <a href="http://www.doritostimemachine.com/" target="_blank">Million Dollar Super Bowl Doritos Time Machine</a> winner, Ryan Andersen! </p>
+              </div>
+              <div class="row">
+                <div class="col-xs-11 col-sm-6 col-md-3 youtube ">
+                  <div class="videoWrapper">
+                    <iframe replaced="true" s5668188898461628016="true" src="https://www.youtube.com/embed/GY_zgTA_rmM?rel=0&amp;showinfo=0" title="Small Holes in Skull" class="tableLinks" height="160" width="240"> </iframe>
+                  </div>
+                  <div class="socialmediaicons col-centered" style=" min-width:250px !important;  padding-bottom:5px; "> <a onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Small Holes in Skull&amp;p[summary]=Pets&amp;p[url]=https://www.youtube.com/embed/GY_zgTA_rmM?rel=0&amp;showinfo=0&amp;&amp;p[images][0]=http%3A%2F%2Fkarmora.com%2Fthemes%2Fkarmora%2Fimages%2Ftrends%2F1392399689.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" src="https://www.karmora.com/public/images/icons/share-on-facebook.jpg" alt="share on facebook"> </a> <a onclick="window.open('https://twitter.com/intent/tweet?url=https://www.youtube.com/embed/GY_zgTA_rmM?rel=0&amp;showinfo=0&amp;hashtags=TrendingOnKarmora&amp;text=Small Holes in Skull&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" alt="tweet" src="https://www.karmora.com/public/images/icons/tweeticons.png"> </a> <a onclick="window.open('http://www.pinterest.com/pin/create/button/?url=https://www.youtube.com/embed/GY_zgTA_rmM?rel=0&amp;showinfo=0&amp;media=https://www.karmora.com/public/images/video_cover_image/cover_1415810759.jpg&amp;description=Small Holes in Skull', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" alt="Pin it" src="https://www.karmora.com/public/images/icons/pinit_fg_en_rect_gray_20.png"> </a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="col-xs-11 col-sm-6 col-md-3 youtube ">
+                  <div class="videoWrapper">
+                    <iframe replaced="true" s5668188898461628016="true" src="https://www.youtube.com/embed/OHN4eEpT63w?rel=0&amp;showinfo=0" title="College Students" class="tableLinks" height="160" width="240"> </iframe>
+                  </div>
+                  <div class="socialmediaicons col-centered" style=" min-width:250px !important;  padding-bottom:5px; "> <a onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=College Students&amp;p[summary]=Pets&amp;p[url]=https://www.youtube.com/embed/OHN4eEpT63w?rel=0&amp;showinfo=0&amp;&amp;p[images][0]=http%3A%2F%2Fkarmora.com%2Fthemes%2Fkarmora%2Fimages%2Ftrends%2F1392399689.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" src="https://www.karmora.com/public/images/icons/share-on-facebook.jpg" alt="share on facebook"> </a> <a onclick="window.open('https://twitter.com/intent/tweet?url=https://www.youtube.com/embed/OHN4eEpT63w?rel=0&amp;showinfo=0&amp;hashtags=TrendingOnKarmora&amp;text=College Students&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" alt="tweet" src="https://www.karmora.com/public/images/icons/tweeticons.png"> </a> <a onclick="window.open('http://www.pinterest.com/pin/create/button/?url=https://www.youtube.com/embed/OHN4eEpT63w?rel=0&amp;showinfo=0&amp;media=https://www.karmora.com/public/images/video_cover_image/cover_1415810492.jpg&amp;description=College Students', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" alt="Pin it" src="https://www.karmora.com/public/images/icons/pinit_fg_en_rect_gray_20.png"> </a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="col-xs-11 col-sm-6 col-md-3 youtube ">
+                  <div class="videoWrapper">
+                    <iframe replaced="true" s5668188898461628016="true" src="https://www.youtube.com/embed/vzISFN-ZZxY?rel=0&amp;showinfo=0" title="Annie Boyfriend" class="tableLinks" height="160" width="240"> </iframe>
+                  </div>
+                  <div class="socialmediaicons col-centered" style=" min-width:250px !important;  padding-bottom:5px; "> <a onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Annie Boyfriend&amp;p[summary]=Pets&amp;p[url]=https://www.youtube.com/embed/vzISFN-ZZxY?rel=0&amp;showinfo=0&amp;&amp;p[images][0]=http%3A%2F%2Fkarmora.com%2Fthemes%2Fkarmora%2Fimages%2Ftrends%2F1392399689.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" src="https://www.karmora.com/public/images/icons/share-on-facebook.jpg" alt="share on facebook"> </a> <a onclick="window.open('https://twitter.com/intent/tweet?url=https://www.youtube.com/embed/vzISFN-ZZxY?rel=0&amp;showinfo=0&amp;hashtags=TrendingOnKarmora&amp;text=Annie Boyfriend&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" alt="tweet" src="https://www.karmora.com/public/images/icons/tweeticons.png"> </a> <a onclick="window.open('http://www.pinterest.com/pin/create/button/?url=https://www.youtube.com/embed/vzISFN-ZZxY?rel=0&amp;showinfo=0&amp;media=https://www.karmora.com/public/images/video_cover_image/cover_1415396500.jpg&amp;description=Annie Boyfriend', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" alt="Pin it" src="https://www.karmora.com/public/images/icons/pinit_fg_en_rect_gray_20.png"> </a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="col-xs-11 col-sm-6 col-md-3 youtube ">
+                  <div class="videoWrapper">
+                    <iframe replaced="true" s5668188898461628016="true" src="https://www.youtube.com/embed/BWFt82Lxlm4?rel=0&amp;showinfo=0" title="Finger Blaster" class="tableLinks" height="160" width="240"> </iframe>
+                  </div>
+                  <div class="socialmediaicons col-centered" style=" min-width:250px !important;  padding-bottom:5px; "> <a onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=Finger Blaster&amp;p[summary]=Pets&amp;p[url]=https://www.youtube.com/embed/BWFt82Lxlm4?rel=0&amp;showinfo=0&amp;&amp;p[images][0]=http%3A%2F%2Fkarmora.com%2Fthemes%2Fkarmora%2Fimages%2Ftrends%2F1392399689.jpg', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" src="https://www.karmora.com/public/images/icons/share-on-facebook.jpg" alt="share on facebook"> </a> <a onclick="window.open('https://twitter.com/intent/tweet?url=https://www.youtube.com/embed/BWFt82Lxlm4?rel=0&amp;showinfo=0&amp;hashtags=TrendingOnKarmora&amp;text=Finger Blaster&amp;via=Shopkarmora', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" alt="tweet" src="https://www.karmora.com/public/images/icons/tweeticons.png"> </a> <a onclick="window.open('http://www.pinterest.com/pin/create/button/?url=https://www.youtube.com/embed/BWFt82Lxlm4?rel=0&amp;showinfo=0&amp;media=https://www.karmora.com/public/images/video_cover_image/cover_1415396446.jpg&amp;description=Finger Blaster', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)"> <img class="imgSocialIcon" alt="Pin it" src="https://www.karmora.com/public/images/icons/pinit_fg_en_rect_gray_20.png"> </a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <h4 class="bodytext">Make sure that you provide a link to your Karmora web address in the comment section when you share our videos!</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel ">
+          
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+            <h2 class="col-md-5 col-centered numbers-heading">
+              <div class="h-number">3</div>
+              Earn $5 Boodles of Bonuses Via Karmora-Mail</h2>
+            </a>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="row" id="two-col-list">
+                <div class="col-md-12" style="text-align:center;">
+                  <p>You can share Good Karmora via email and start building your Shopping Community in four very simple steps! </p>
+                </div>
+                <div class="clearfix"></div>
+                <h4 class=" col-xs-10 col-md-7 col-centered numbering">
+                  <div class="h-numbering">Step<br>
+                    <span>1</span></div>
+                  Select an email platform </h4>
+                <div class="col-xs-12 col-sm-12 col-md-12" style="text-align:center;">
+                  <h3 class="text-center" style="color:#000; margin-bottom:0px; text-align:center;">Share With All Your Friends</h3>
+                  <div id="share-circle" style="margin-top:20px; margin-bottom:0px;"> <a href="#" data-toggle="modal" data-target="#loginModal" class="circle">
+                    <div class="icon">
+                      <div class="image aa"></div>
+                    </div>
+                    <div id="icon-title">Yahoo</div>
+                    </a> <a href="#" data-toggle="modal" data-target="#loginModal" class="circle">
+                    <div class="icon">
+                      <div class="image bb"></div>
+                    </div>
+                    <div id="icon-title">MSN</div>
+                    </a> <a href="javascript:;" onclick="targetout()" class="circle">
+                    <div class="icon">
+                      <div class="image dd"></div>
+                    </div>
+                    <div id="icon-title">Outlook</div>
+                    </a> <a href="#" data-toggle="modal" data-target="#loginModal" class="circle">
+                    <div class="icon">
+                      <div class="image ff"></div>
+                    </div>
+                    <div id="icon-title">Gmail</div>
+                    </a>
+                    <div class="clearfix"></div>
+                    <p>Choose an email account and all of your contacts will be sent an invite to join your Karmora Shopping Community.</p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-6 col-centered">
+                  <div class="h2-line">
+                    <h2 style="background:#FFF; text-align:center; margin-bottom:0px; width:50px; margin-left:45%">OR</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <form id="formpromotion" method="post">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-centered " style="text-align:center;">
+                    <h2>Share With Just Your Besties</h2>
+                    <div class="row"></div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="row" id="invite-friend-div">
+                      <div class="col-md-12">
+                        <input type="text" placeholder="Friend´s Name " name="friends_name[]" class=" col-xs-12 col-sm-6 col-md-6 ">
+                        <input type="email" placeholder="Friend´s Email " name="friends_email[]" class=" col-xs-12 col-sm-6 col-md-6 " required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 col-centered" style="text-align:center;"> <br>
+                        <button type="button" id="addmore" class=" col-md-8 btn btn-default col-centered" style="display:inline-block; margin-bottom:10px;"> Add Another Friend </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix" style="margin-bottom:20px;"></div>
+                  <h4 class=" col-xs-10 col-md-7 col-centered numbering">
+                    <div class="h-numbering">Step<br>
+                      <span>2</span></div>
+                    Choose how often you would like to send your invite</h4>
+                  <div class="col-md-5 col-centered" id="radio-checkbox">
+                    <div class="checkbox-div"> </div>
+                  </div>
+                  <script>
+$(document).ready(function(){
+  $("#no-thanks").click(function(){
+    $("#automail").hide();
+  });
+  $("#yes").click(function(){
+    $("#automail").show();
+  });
+});
+</script>
+                  <div class="col-xs-12 col-sm-12  col-md-12">
+                    <div class="clearfix" style="margin-bottom:20px;"></div>
+                    <div class="row" style="margin-bottom:15px;">
+                      <h4 class=" col-xs-10 col-md-7 col-centered numbering">
+                        <div class="h-numbering">Step<br>
+                          <span>3</span></div>
+                        Preview &amp; Send Your Invite</h4>
+                      <div class="col-md-4 col-centered" style="text-align:center;"> <br>
+                        <div class="row"> <a target="_blank" href="https://www.karmora.com/share/preview" name="submit" class=" col-md-5 btn btn-default " style="width:45%"> Preview Email </a>
+                          <button type="submit" onclick="submitdata('share')" class=" col-md-5  btn btn-default" style="width:45%"> Send </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <h4 class=" col-xs-10 col-md-7 col-centered numbering">
+                        <div class="h-numbering">Step<br>
+                          <span>4</span></div>
+                        Track Your Invitations</h4>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" id="social-btn-r">
+                            <h4 class="panel-title"> <a href="#" data-toggle="modal" data-target="#loginModal" class="circle"> <!--<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">--> Shoppers Invited </a> </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" id="social-btn-r">
+                            <h4 class="panel-title"> <a href="#" data-toggle="modal" data-target="#loginModal" class="circle"> <!--<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">--> Shoppers in your community </a> </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" id="social-btn-r">
+                            <h4 class="panel-title"> <a href="#" data-toggle="modal" data-target="#loginModal" class="circle"> <!--<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">--> Shoppers still thinking about joining your Community </a> </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel ">
+          
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+            <h2 class="col-md-5 col-centered numbers-heading">
+              <div class="h-number">4</div>
+              Share 5 Custom Karmora Cards a Day!</h2>
+            </a>
+          <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-md-12">
+                <p>Karmora has created a marketing portal where you can go, as a Webstore Owner, to purchase high quality &amp; affordable marketing material designed specifically to help you build the <br>
+                  strongest most successful shopping community possible. Simply create an account, personalize your material, and begin handing your business cards and flyers to anyone you meet and watch your shopping community explode!</p>
+                <p><a target="_blank" href="http://karmora.onpointmkt.net/">CLICK HERE </a>to create an account... It’s free!</p>
+                <p>&nbsp;</p>
+                <div class="col-md-8 col-centered">
+                  <h4 class="pink-text">Sample Customizable Business Cards</h4>
+                  <p>&nbsp;</p>
+                  <div class=" col-sm-6 col-md-6"><img src="http://test.karmora.com/public/images/mix/card-1.png"><br>
+                    <h4 class="pink-text">Front of Card</h4>
+                  </div>
+                  <div class="col-sm-6 col-md-6"><img src="http://test.karmora.com/public/images/mix/card-2.png"><br>
+                    <h4 class="pink-text">Back of Card</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- .container --> 
+
+<!-- Footer -->
+<div class="row row-offset-control clear-float footer">
+  <div class="container">
+    <div class="text-center">
+      <ul class="sociol-media-icons">
+        <li> <a href="#"> <i class="fa fa-twitter fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-facebook fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-google-plus fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-pinterest fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-youtube fa-inverse fa-1x"></i> </a> </li>
+        <li> <a href="#"> <i class="fa fa-inverse fa-1x"><img src="images/icons/blog-icon.png"></i> </a> </li>
+      </ul>
+    </div>
+    <div class="row row-offset-control">
+      <div class="col-sm-7 col-md-7 col-lg-7 footer-about">
+        <h3>About Karmora</h3>
+        <p> Karmora is the premier Cash Back Website in the World!  With more than 1,500 stores to choose from we pay some of the highest rebates available on the internet.  Karmora is paid an advertising fee for directing traffic to our advertisers and we in turn share it with our Shoppers, Webstore Owners, and Fundraising Organizations.  We empower our members with the ability to have their own cash back Webstore where they can profit from the purchases of other shoppers. </p>
+        <div class="footer-logo"> <a href="#"> <img src="images/footer-logo.png" alt="logo" /> </a> </div>
+      </div>
+      <div class="col-md-5 col-md-5 col-lg-5 latest-from-blog">
+        <h3>Latest Blogs</h3>
+        <div class="blog clear-float">
+          <p class="p-heading"> <img class="pull-left" src="images/mix/thumb.png" alt="thumb" />
+          <div class="description"> You'll Love Alex and Ani – 7% Commission!!!!!!!<br>
+            <span class="posted-on">Posted on:</span> <span class="date">April 10, 2014</span> <a class="read-more" href="#"> Read More </a> </div>
+          </p>
+        </div>
+        <div class="space-10"></div>
+        <div class="blog clear-float">
+          <p class="p-heading"> <img class="pull-left" src="images/mix/thumb.png" alt="thumb" />
+          <div class="description"> You'll Love Alex and Ani – 7% Commission!!!!!!!<br>
+            <span class="posted-on">Posted on:</span> <span class="date">April 10, 2014</span> <a class="read-more" href="#"> Read More </a> </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Footer --> 
+
+<!-- Copyright -->
+<div class="row row-offset-control copyright">
+  <div class="container">
+    <div class="text-center">
+      <ul>
+        <li> <a href="#"> Privacy Policy </a> </li>
+        <li> <a href="#"> Refund Policy </a> </li>
+        <li> <a href="#"> Terms of Use </a> </li>
+        <li> <a href="#"> FAQ </a> </li>
+        <li> <a href="#"> Contact Us </a> </li>
+        <li> <a href="#"> Disclosure Statement </a> </li>
+      </ul>
+      <p>© 2014 Karmora. All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
+<!-- End Copyright --> 
+
+<!-- ================== Modals ================== -->
+<div class="modal fade" id="funnyroules" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+        <button type="button" class=" close close-popup" data-dismiss="modal" aria-hidden="true"><img src="images/icons/close.png"></button>
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h1>Rules So Easy You’ll Laugh Your Pants Off!</h1>
+        <h2>Promotion Rules and Regurgitation</h2>
+      </div>
+      <div class="mod-footer clear-float">
+        <ul>
+          <li>You must be a Karmora member to participate. Everyone who is anyone is a Karmora member!</li>
+          <li> Your purchase must have been made through your Karmora webstore. We do not give prize money to people willing to pay full price because they are obviously made of money and don't need it!</li>
+          <li> Don’t procrastinate! This isn't homework or doing the dishes! The sooner you submit your video the more time you have to gain votes. We will not accept votes or videos after October 31, 2014 at 11:59:59 PM Arizona Time (we never have to change our clocks... how sweet is that!).</li>
+          <li> If using Instagram, make sure your profile is viewable to the public and/or we are connected. Ya know, you like us, we like you, so we follow each other. We can’t guarantee we won’t comment on all your selfies though!</li>
+          <li> Only videos containing funny, hilarious, crazy, entertaining, goofy, silly, or otherwise awesome content will be accepted for voting. Once accepted you will receive an email with your very own voting page to send to your peeps so they can hook you up with some righteous votes!</li>
+          <li> This is a PG Rated video promotion. Videos containing naughty stuff like profanity, nudity, or illegal activity will be viewed, probably laughed at, and then moved to the “X” rated vault and will never see the light of day!</li>
+          <li> Don’t be a pirate. We cannot use videos with licensed music. If you use licensed music your video will walk the plank and drown in the Karmora Abyss. In land lover terms... your video will be rejected!</li>
+          <li> Be shameless! Invite everyone you know to vote for your video everyday. The video with the most votes gets the prize. You and your righteous peeps are limited to one vote per IP address per day.</li>
+          <li> Be even more than shameless and invite your friends to join your Karmora community and receive 10 votes for every person that joins. Who doesn’t like saving money, making money and having fun?</li>
+          <li> We’re not the Federal Reserve and we can’t print money... yet :) We will pay for your purchase up to $250 regardless of your purchase amount. If you buy a Rolex for $10 Gazillion dollars you will only get a check for $250 from the Bank of Karmora!</li>
+          <li> We are nice, but not that nice. If you buy a pair of Crocs for $49 you will get a $49 check as your prize. Perhaps you should consider purchasing a pair of Crocs for each of your five Croc-a-Kids and maximize your prize potential! Please don't call us and say what a Croc-of-Poo it is that you only won $49 if you only buy a single pair.</li>
+          <li> Your purchase amount will be added to your eWallet and will be available for immediate collection.</li>
+          <li> Cheaters Never Win! If you get caught cheating for votes we will disqualify you and chant “cheater, cheater, cheater!”</li>
+          <li> In the event of a tie, Karmora staff in their unquestionable, undeniable, remarkable, just, fair and sole discretion will determine the winner.</li>
+          <li> Be a horrible winner and brag as much as possible to everyone you know (and don’t know) about winning the promotion and how smart, funny and creative your are. And... after you catch your breath and your arm stops cramping from patting yourself on the back invite hem to join your Karmora Shopping Community!</li>
+          <li> Don’t be a cry baby if you lose. No one likes a cry baby! Besides, this promotion is bound by our mem- bership Terms of Use which strictly prohibits crying. Seriously, we’re not kidding. Well... kinda.</li>
+          <li> Winner will be announced on October 1, 2014.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Singup -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+        <button type="button" class=" close close-popup" data-dismiss="modal" aria-hidden="true"><img src="images/icons/close.png"></button>
+        <div class="mod-head pull-right">
+          <h4>Already a Member? <a href="#" data-toggle="modal" data-target="#loginModal"> Login </a> </h4>
+        </div>
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h2>Step 1 - <span class="highlight">Join Now. It´s Free !</span></h2>
+      </div>
+      <div class="signup-options">
+        <div class="login-with-facebook"> <i class="fa fa-facebook fa-inverse fa-7x"></i>
+          <h5 class="fb-message">Join with facebook</h5>
+          <label class="option hidden-xs">OR</label>
+        </div>
+        <div class="md-form-bg">
+          <form method="post" action="#">
+            <div class="form-inner">
+              <h3>Please Signup</h3>
+              <div class="form-fields">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <label class="form-lbl">We will not share or sell your information.</label>
+            </div>
+            <a class="btn-submit" href="#"> <i class="fa fa-arrow-right fa-2x"></i> </a>
+          </form>
+        </div>
+      </div>
+      <div class="mod-footer clear-float">
+        <p>By becoming a Karmora Member, I agree to the Karmora <a href="#"> terms and conditions </a> </p>
+        <p>Karmora is the premier cash back Webstore offering top rebates and coupons to more than 1,500+ name brand stores, Whether you are a bargain shopper looking for the best coupons, free shipping codes, promotional codes, deals, and rebates sites; a networker looking to build a community of shoppers where you can earn commissions every day; or a fundraising organization looking for an exciting new way to raise funds for your worthy cause, Karmora is the home for you!</p>
+        <p> <a href="#"> I'd prefer to look around a bit before making a decision to join Karmora </a> </p>
+        <p>© 2015 Karmora, LLC. All rights reserved. <a href="#"> Privacy Policy </a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.modal --> 
+<!-- Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="row row-offset-control modal-content">
+      <div class="row row-offset-control">
+        <button type="button" class=" close close-popup" data-dismiss="modal" aria-hidden="true"><img src="images/icons/close.png"></button>
+      </div>
+      <div class="clear-float sn-modal-title">
+        <h2>Step 1 - <span class="highlight">Join Now. It´s Free !</span></h2>
+      </div>
+      <div class="signup-options login-options">
+        <div class="md-form-bg">
+          <form method="post" action="#">
+            <div class="form-inner">
+              <h3>Please Signup</h3>
+              <div class="form-fields">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <label class="form-lbl">Refered by a member <a href="#"> Click Here </a> .</label>
+            </div>
+            <a class="btn-submit" href="#"> <span class="start-shopping">Start Shopping</span> </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /.modal -->
+</div>
+</div>
+</div>
+<div class="clearfix visible-sm"></div>
+</div>
+<!-- /.modal --> 
+<!-- End Modals --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

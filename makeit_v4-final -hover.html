@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+        <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Karmora e-store">
+        <meta name="keywords" content="Shopping, Clothing, Fashion">
+        <meta name="author" content="Karmora">
+        <title>Karmora - Dashboard</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-overrides.css">
+        <link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/karmora.js"></script>
+        <script type="text/javascript">
+            var switchTo5x = true;
+        </script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">
+            stLight.options({publisher: "37637af7-d0c7-4468-8e85-29cbb724f950", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+        </script>
+        <script type="text/javascript" src="js/compatibility/ie10.js"></script>
+        </head>
+
+        <body role="document">
+<div class="container" ><!-------four-boxes---->
+          
+          <div class="row border-bottom" id="side-chart" >
+   
+   
+   
+   
+    <div class="po-markup col-xs-8 col-sm-5 col-md-4  pull-right" id="four-color"> 
+    <img src="images/mix/4color-img.png" class="img-responsive">
+
+<div class="pop-top text a" > Enter # of Shoppers </br>  <input type="text" class="number" value="10">
+<div class="po-content hidden">
+    <div class="po-title">STEP 1: </div>
+    <!-- ./po-title -->
+    <div class="po-body">
+      <div class="row">
+        <div class="col-xs-12">Read through the Top prospect list descriptions and enter the number of shoppers you may have per category.</div>
+      </div>
+    </div>
+    <!-- ./po-body --> 
+  </div>
+</div>
+<div class="pop-top2 text b"> Enter Annual Spend</br> <input type="text" class="number dollor" ><div class="po-content hidden">
+    <div class="po-title2">STEP 2:  </div>
+    <!-- ./po-title -->
+    <div class="po-body2">
+      <div class="row">
+        <div class="col-xs-12">The average online shopper spends approximately $1,700 per year shopping online, but it can differ from family to family, business to business and charity to charity. How much will your shoppers spend every year on birthday & holiday gifts, back to school shopping, travel and vacation, office supplies and everyday household needs? You can change the average annual spend if you'd like to.
+        </div>
+      </div>
+    </div>
+    <!-- ./po-body --> 
+  </div> </div>
+<div class="pop-top3 text c"> Enter Average Rebate </br> <input type="text" class="number percent" ><div class="po-content hidden">
+    <div class="po-title3">STEP 3: </div>
+    <!-- ./po-title -->
+    <div class="po-body3">
+      <div class="row">
+        <div class="col-xs-12">We like to use 6% as the average cash back rebate, however the percentage is different for every store. You can change the average cash back percentage if you'd like to.</div>
+      </div>
+    </div>
+    <!-- ./po-body --> 
+  </div> </div>
+<div class="pop-top4 text d"> Annual Commission </br><input type="text" class="number dollor" > <div class="po-content hidden">
+    <div class="po-title4">STEP 4: </div>
+    <!-- ./po-title -->
+    <div class="po-body4">
+      <div class="row">
+        <div class="col-xs-12">
+        Your estimated income will be automatically calculated. Karmora isn't a get rich quick scheme. As you add more shoppers your income will grow. Set a goal for the number of shoppers you want to have in your community and focus on having fun.</div>
+      </div>
+    </div>
+    <!-- ./po-body --> 
+  </div></div>
+<script>
+
+$(document).ready(function() {
+
+  $('.pop-top').popover({
+    trigger: 'hover',
+    html: true,  // must have if HTML is contained in popover
+
+    // get the title and conent
+    title: function() {
+      return $(this).parent().find('.po-title').html();
+    },
+    content: function() {
+      return $(this).parent().find('.po-body').html();
+    },
+
+    container: 'body',
+    placement: 'top'
+
+  });
+  
+  
+   $('.pop-top2').popover({
+    trigger: 'hover',
+    html: true,  // must have if HTML is contained in popover
+
+    // get the title and conent
+    title: function() {
+      return $(this).parent().find('.po-title2').html();
+    },
+    content: function() {
+      return $(this).parent().find('.po-body2').html();
+    },
+
+    container: 'body',
+    placement: 'top'
+
+  });
+  
+  
+   $('.pop-top3').popover({
+    trigger: 'hover',
+    html: true,  // must have if HTML is contained in popover
+
+    // get the title and conent
+    title: function() {
+      return $(this).parent().find('.po-title3').html();
+    },
+    content: function() {
+      return $(this).parent().find('.po-body3').html();
+    },
+
+    container: 'body',
+    placement: 'top'
+
+  });
+  
+  $('.pop-top4').popover({
+    trigger: 'hover',
+    html: true,  // must have if HTML is contained in popover
+
+    // get the title and conent
+    title: function() {
+      return $(this).parent().find('.po-title4').html();
+    },
+    content: function() {
+      return $(this).parent().find('.po-body4').html();
+    },
+
+    container: 'body',
+    placement: 'top'
+
+  });
+  
+
+});
+
+</script> 
+
+
+
+            </div>
+            
+            
+            
+            
+            
+            
+    <div class="clearfix"></div>
+  </div>
+          </br>
+          </br>
+          </br>
+        </div>
+<!-- .container #pay4mypurchase_v2 --> 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
